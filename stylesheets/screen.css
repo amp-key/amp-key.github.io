@@ -1,0 +1,146 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 8, ../sass/screen.scss */
+body {
+  overflow: hidden !important;
+}
+
+/* line 12, ../sass/screen.scss */
+.table .checkbox {
+  margin-top: 15px;
+}
+
+@media (max-width: 1024px) {
+  /* line 20, ../sass/screen.scss */
+  #topnav .app-search {
+    width: 450px;
+  }
+
+  /* line 24, ../sass/screen.scss */
+  table amp-img {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+  }
+
+  /* line 31, ../sass/screen.scss */
+  th:first-child, td:first-child {
+    display: none;
+  }
+
+  /* line 36, ../sass/screen.scss */
+  .footer {
+    padding: 18px 0;
+  }
+  /* line 39, ../sass/screen.scss */
+  .footer ul {
+    float: none !important;
+    margin: 10px auto;
+  }
+  /* line 43, ../sass/screen.scss */
+  .footer ul li:first-child {
+    padding-left: 0;
+  }
+
+  /* line 49, ../sass/screen.scss */
+  amp-sidebar[side][open] {
+    width: calc(100% + 200px);
+    display: block;
+    padding-top: 60px;
+    top: 0 !important;
+    text-align: center;
+  }
+  /* line 56, ../sass/screen.scss */
+  amp-sidebar[side][open] ul {
+    padding: 0;
+  }
+  /* line 60, ../sass/screen.scss */
+  amp-sidebar[side][open] a {
+    color: #2a2a2a;
+  }
+  /* line 64, ../sass/screen.scss */
+  amp-sidebar[side][open] li {
+    margin: 10px auto 10px auto;
+  }
+  /* line 67, ../sass/screen.scss */
+  amp-sidebar[side][open] li a {
+    line-height: 35px;
+  }
+  /* line 72, ../sass/screen.scss */
+  amp-sidebar[side][open] i {
+    margin-right: 10px;
+    color: #ccc;
+    font-size: 18px;
+  }
+
+  /* line 79, ../sass/screen.scss */
+  #sidebar {
+    left: auto;
+    right: 0;
+    display: block;
+    min-width: 100% !important;
+    width: auto;
+    padding: 60px 20px 20px 20px;
+    min-height: 100vh;
+  }
+  /* line 88, ../sass/screen.scss */
+  #sidebar form {
+    position: relative;
+    margin-bottom: 30px;
+  }
+  /* line 92, ../sass/screen.scss */
+  #sidebar form a {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 38px;
+    height: 38px;
+  }
+  /* line 101, ../sass/screen.scss */
+  #sidebar form i {
+    position: relative;
+    font-size: 18px;
+    margin: 10px 0 0 0;
+    color: #ccc;
+  }
+  /* line 109, ../sass/screen.scss */
+  #sidebar .form-control {
+    border: 1px solid rgba(95, 190, 170, 0.5);
+  }
+
+  /* line 114, ../sass/screen.scss */
+  .amp-close-image {
+    display: block;
+    position: absolute;
+    left: auto;
+    top: 25px;
+    right: 20px;
+    z-index: 99999;
+  }
+}
+@media (max-width: 725px) {
+  /* line 125, ../sass/screen.scss */
+  .footer {
+    padding: 8px 0;
+  }
+}
+@media (max-width: 480px) {
+  /* line 131, ../sass/screen.scss */
+  table amp-img {
+    width: 150px;
+    height: 100px;
+  }
+
+  /* line 136, ../sass/screen.scss */
+  h1 {
+    text-align: center;
+  }
+  /* line 139, ../sass/screen.scss */
+  h1 span {
+    display: block;
+    text-align: center;
+    margin: 8px auto !important;
+  }
+}
