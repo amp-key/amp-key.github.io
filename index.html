@@ -4,18 +4,16 @@
     <meta charset="utf-8">
     <script async src="https://cdn.ampproject.org/v0.js"></script>
     <title>Hello, AMPs</title>
-    <link rel="canonical" href="https://ampbyexample.com/components/amp-sidebar/">
+    <!-- <link rel="canonical" href="https://ampbyexample.com/components/amp-sidebar/"> -->
     
     <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png">
     <link rel="icon" type="image/png" href="favicons/favicon-32x32.png" sizes="32x32">
     <link rel="icon" type="image/png" href="favicons/favicon-16x16.png" sizes="16x16">
     <link rel="manifest" href="favicons/manifest.json">
     <link rel="mask-icon" href="favicons/safari-pinned-tab.svg">
-    <link rel="shortcut icon" href="favicons/favicon.ico?">
+    <!-- <link rel="shortcut icon" href="favicons/favicon.ico?"> -->
     <meta name="msapplication-config" content="favicons/browserconfig.xml">
     <meta name="theme-color" content="#ffffff">
-
-    <link rel="icon" href="img/demo_icon.gif" type="image/gif" sizes="16x16">
 
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
     <script type="application/ld+json">
@@ -98,7 +96,6 @@
           }
           /* line 39, ../sass/screen.scss */
           .footer ul {
-            float: none !important;
             margin: 10px auto;
           }
           /* line 43, ../sass/screen.scss */
@@ -182,6 +179,13 @@
             z-index: 99999;
           }
         }
+        
+        @media (max-width: 758px) {
+            .footer ul {
+                float: none !important;
+            }
+        }
+
         @media (max-width: 725px) {
           /* line 125, ../sass/screen.scss */
           .footer {
@@ -249,424 +253,431 @@
   </div>
 </header>
 
-	<div class="container">
-		<div class="row">
-			<div class="col-xs-12">
-				<h1 class="h3">Analytics for <b>search audio url</b>
-					<span style="margin-left: 1em">
-					<a class="btn btn-follow " data-toggle="modal" title="Sign up to follow keyword" href="#signup-modal">
-					Follow keyword</a>
-					</span>
-				</h1>
-			</div>
-		</div>
-	
-	
-		<div class="card-box widget-inline">
-			<div class="row">
-				<div class="col-md-6">
-						<div class="banner text-center" style="margin: 0"><!-- MKeys responsive center -->
-						<ins class="adsbygoogle ad-md-336-280 ad-xs-320-90" data-ad-client="ca-pub-4672709811169659" data-ad-slot="2465332122" data-ad-format="auto"></ins>
-						<script>
-						(adsbygoogle = window.adsbygoogle || []).push({});
-						</script>
-					</div>
-				</div>
-			<div class="col-md-6">
-				<div class="col-md-6 col-sm-6">
-					<div class="widget-inline-box text-center" style="border-right: none"><div class="h3"><i class="fa fa-signal text-primary"></i> <b>Very high</b></div><div class="h4 text-muted">Frequency</div></div></div><div class="col-md-6 col-sm-6"><div class="widget-inline-box text-center" style="border-right: none"><div class="h3"><i class="fa fa-heart text-pink"></i> <b>No</b></div><div class="h4 text-muted">Only adult</div></div></div><div class="col-md-6 col-sm-6"><div class="widget-inline-box text-center" style="border-right: none"><div class="h3"><i class="fa fa-language text-custom"></i> <b>English</b></div><div class="h4 text-muted">Language</div></div></div><div class="col-md-6 col-sm-6"><div class="widget-inline-box text-center" style="border-right: none"><div class="h3"><i class="fa fa-info text-purple"></i> <b>0.0</b></div><div class="h4 text-muted">Advertising index</div></div>
-					</div>
-			</div>
-		</div>
-		</div>
-	</div>
-   
-  <!-- добавлен amp sidebar -->
-	<amp-sidebar id='sidebar'  layout="nodisplay"side="right">
-		<amp-img class='amp-close-image'
-			src="img/close.png"
-			width="25"
-			height="25"
-			alt="close sidebar"
-			on="tap:sidebar.close"
-			role="button"
-			tabindex="0">
-		</amp-img>
-		<ul>
-			<li>
-				<form action="https://metricskey.net/search" class="app-search">
-					<input class="form-control" name="query" placeholder="Search domain, keyword, url" type="text" value="">
-					<a href="https://metricskey.net/search/search-audio-url/#" onclick="$(this).closest('form').submit(); return false;"><i class="fa fa-search"></i></a>
-				</form>
-			</li>
-			<li>
-				<a href="/site-info"><i class="fa fa-industry"></i>Website analysis</a>
-			</li>
-			<li>
-				<a href="/keyword-info"><i class="fa fa-key"></i>Keywords research</a>
-			</li>
-			<li>
-				<a href="/url-info"><i class="fa fa-sitemap"></i>Content research</a>
-			</li>
-			<li>
-				<a href="/compare-sites"><i class="fa fa-cubes"></i>Competitors</a>
-			</li>
-			<li>
-				<a target="_blank" href="/sites/updown"><i class="fa fa-rocket"></i>Updown test</a>
-			</li>
-			
-		</ul>
-	</amp-sidebar>
-
-	<!-- добавлен тестовый рекалмынй блок -->
-	<div class="container">
-		<div class="row">
-			<div class="col-xs-12">
-				
-			</div>
-			 <amp-ad
-				layout="responsive"
-				width=300
-				height=250
-				type="adsense"
-				data-ad-client="ca-pub-4672709811169659"
-				data-ad-slot="2465332122">
-			</amp-ad>
-		</div>
-	</div>
-
-    <div class="main">
-	
-    	<div class="container table-container">
-            <div class="panel-heading"><h3 class="panel-title">Best of <span class="font-600">mortal combat</span> at MetricsKey<span class="text-muted">(Out of <b>80.4 Million</b> in result | Last check <b>31 January 2016</b>)</span></h3></div>
-    		<div class="row">
-    			<table class="table table-striped" style="table-layout: fixed">
-    			<thead>
-    				<tr>
-    					<!-- добавлен th и убран collspan="2" у одного из th -->
-    					<th class="text-center" style="width:50px">
-    						<i class="fa fa-check-square-o"></i>
-    					</th>
-    					
-    					<th class="text-center" style="width:50px">Pos.</th>
-    					<th style="width:50px" class="hidden-xs hidden-sm"></th>
-    					<th colspan="1">Description</th>
-    				</tr>
-    				</thead>
-    				<tbody>
-
-    					<!-- изменены td указана другая ширина -->
-    					<tr>
-    						<td class="text-center td-center hidden-sm hidden-xs" width="50px">
-    							<div class="checkbox checkbox-primary"><input data-domain="apple.com" type="checkbox">
-    							<label></label>
-    							</div>
-    						</td>
-
-    						<td class="text-center td-center hidden-lg hidden-md success" style="padding: 0 3px; width:30px">
-    							<div>1(0)
-    								<span class="text-success">
-    									<i class="fa fa-arrow-up"></i>
-    								</span>
-    							</div>
-
-    							<div class="checkbox checkbox-primary"><input data-domain="apple.com" type="checkbox"><label></label>
-    							</div>
-    						</td>
-
-    						<td class="text-center td-center hidden-xs hidden-sm" style="width:30px">1</td>
-
-    						<td class="text-right td-center success hidden-xs hidden-sm" >
-    							0
-    							<span class="text-success">
-    								<i class="fa fa-arrow-up"></i>
-    							</span>
-    						</td>
-
-    						<td>
-    							<div class="row hover-container">
-    								<div class="col-lg-2 col-xs-12 text-center">
-
-    									<a href="/site-info/apple.com">
-
-    										<amp-img src="http://thumbnail.metricskey.net/t/336x280/0f9ec5f02d42c78b46e6f161e2d285d471cce1ae.jpg?uri=apple.com" width="60" height="60" layout="responsive" alt="apple.com screenshot"></amp-img>
-
-    										<noscript>
-    											<img alt="apple.com screenshot" style="max-width: 336px;" width="100%" src="http://thumbnail.metricskey.net/t/336x280/0f9ec5f02d42c78b46e6f161e2d285d471cce1ae.jpg?uri=apple.com" />
-    										</noscript>
-
-    										<div>
-    											<div class="star-ratings ">
-    												<div class="star-ratings-top" style="width: 60%">
-    													<i class="fa fa-star"></i>
-    													<i class="fa fa-star"></i>
-    													<i class="fa fa-star"></i>
-    													<i class="fa fa-star"></i>
-    													<i class="fa fa-star"></i>
-    												</div>
-
-    												<div class="star-ratings-bottom">
-    													<i class="fa fa-star"></i>
-    													<i class="fa fa-star"></i>
-    													<i class="fa fa-star"></i>
-    													<i class="fa fa-star"></i>
-    													<i class="fa fa-star"></i>
-    												</div>
-    											</div>
-    										</div>
-    									</a>
-
-    								</div>
-
-    								<div class="col-lg-10 col-xs-12">
-
-    									<div class="h5 word-break-xs">
-    										<img data-original="https://plus.google.com/_/favicon?domain_url=http://apple.com" src="https://plus.google.com/_/favicon?domain_url=http://apple.com" class="lazy" alt="icon of apple.com" style="display: inline;" width="16" height="16">
-
-    										<noscript>
-    											<img alt="icon of apple.com" height="16" width="16" src="https://plus.google.com/_/favicon?domain_url=http://apple.com" />
-    										</noscript>
-
-    										<a href="/site-info/apple.com">apple.com</a>
-    									</div>
-
-    									<div class="h5 font-600 word-break-xs">Apple</div>
-
-    									<p class="word-break-xs">See the MacBook Pro, iPhone 7, and AirPods. Explore iPad, Apple Watch, iOS, watchOS, macOS, and more. Visit the site to learn, buy, and get support.</p>
-
-    									<div class="btn-group">
-    										<button class="btn btn-white dropdown-toggle" data-toggle="dropdown">Look at 5 relevant links</button>
-
-    										<ul class="dropdown-menu">
-    											<li><a title="/icloud/" href="/url-info?url=http%3A%2F%2Fapple.com%2Ficloud%2F"><span class="text-muted">#5</span> /icloud/</a></li>
-
-    											<li><a title="/iphone/" href="/url-info?url=http%3A%2F%2Fapple.com%2Fiphone%2F"><span class="text-muted">#1</span> /iphone/</a></li>
-
-    											<li><a title="/uk/iphone/" href="/url-info?url=http%3A%2F%2Fapple.com%2Fuk%2Fiphone%2F"><span class="text-muted">#2</span> /uk/iphone/</a></li>
-
-    											<li><a title="/iphone/compare/" href="/url-info?url=http%3A%2F%2Fapple.com%2Fiphone%2Fcompare%2F"><span class="text-muted">#4</span> /iphone/compare/</a></li>
+<div class="wrapper">
+    <div class="container">
+        <div class="row">
+        	<div class="container">
+        		<div class="row">
+        			<div class="col-xs-12">
+        				<h1 class="h3">Analytics for <b>search audio url</b>
+        					<span style="margin-left: 1em">
+        					<a class="btn btn-follow " data-toggle="modal" title="Sign up to follow keyword" href="#signup-modal">
+        					Follow keyword</a>
+        					</span>
+        				</h1>
+        			</div>
+        		</div>
+        	
+        	
+        		<div class="card-box widget-inline">
+        			<div class="row">
+        				<div class="col-md-6">
+        						<div class="banner text-center" style="margin: 0"><!-- MKeys responsive center -->
+        						<ins class="adsbygoogle ad-md-336-280 ad-xs-320-90" data-ad-client="ca-pub-4672709811169659" data-ad-slot="2465332122" data-ad-format="auto"></ins>
+        						<script>
+        						(adsbygoogle = window.adsbygoogle || []).push({});
+        						</script>
+        					</div>
+        				</div>
+        			<div class="col-md-6">
+        				<div class="col-md-6 col-sm-6">
+        					<div class="widget-inline-box text-center" style="border-right: none"><div class="h3"><i class="fa fa-signal text-primary"></i> <b>Very high</b></div><div class="h4 text-muted">Frequency</div></div></div><div class="col-md-6 col-sm-6"><div class="widget-inline-box text-center" style="border-right: none"><div class="h3"><i class="fa fa-heart text-pink"></i> <b>No</b></div><div class="h4 text-muted">Only adult</div></div></div><div class="col-md-6 col-sm-6"><div class="widget-inline-box text-center" style="border-right: none"><div class="h3"><i class="fa fa-language text-custom"></i> <b>English</b></div><div class="h4 text-muted">Language</div></div></div><div class="col-md-6 col-sm-6"><div class="widget-inline-box text-center" style="border-right: none"><div class="h3"><i class="fa fa-info text-purple"></i> <b>0.0</b></div><div class="h4 text-muted">Advertising index</div></div>
+        					</div>
+        			</div>
+        		</div>
+        		</div>
+        	</div>
+           
+          <!-- добавлен amp sidebar -->
+        	<amp-sidebar id='sidebar'  layout="nodisplay"side="right">
+        		<amp-img class='amp-close-image'
+        			src="img/close.png"
+        			width="25"
+        			height="25"
+        			alt="close sidebar"
+        			on="tap:sidebar.close"
+        			role="button"
+        			tabindex="0">
+        		</amp-img>
+        		<ul>
+        			<li>
+        				<form action="https://metricskey.net/search" class="app-search">
+        					<input class="form-control" name="query" placeholder="Search domain, keyword, url" type="text" value="">
+        					<a href="https://metricskey.net/search/search-audio-url/#" onclick="$(this).closest('form').submit(); return false;"><i class="fa fa-search"></i></a>
+        				</form>
+        			</li>
+        			<li>
+        				<a href="/site-info"><i class="fa fa-industry"></i>Website analysis</a>
+        			</li>
+        			<li>
+        				<a href="/keyword-info"><i class="fa fa-key"></i>Keywords research</a>
+        			</li>
+        			<li>
+        				<a href="/url-info"><i class="fa fa-sitemap"></i>Content research</a>
+        			</li>
+        			<li>
+        				<a href="/compare-sites"><i class="fa fa-cubes"></i>Competitors</a>
+        			</li>
+        			<li>
+        				<a target="_blank" href="/sites/updown"><i class="fa fa-rocket"></i>Updown test</a>
+        			</li>
+        			
+        		</ul>
+        	</amp-sidebar>
+
+        	<!-- добавлен тестовый рекалмынй блок -->
+        	<div class="container">
+        		<div class="row">
+        			<div class="col-xs-12">
+        				
+        			</div>
+        			 <amp-ad
+        				layout="responsive"
+        				width=300
+        				height=250
+        				type="adsense"
+        				data-ad-client="ca-pub-4672709811169659"
+        				data-ad-slot="2465332122">
+        			</amp-ad>
+        		</div>
+        	</div>
+
+            <div class="main">
+        	
+            	<div class="container table-container">
+                    <div class="panel panel-warning panel-color">
+                        <div class="panel-heading"><h3 class="panel-title">Best of <span class="font-600">mortal combat</span> at MetricsKey<span class="text-muted">(Out of <b>80.4 Million</b> in result | Last check <b>31 January 2016</b>)</span></h3></div>
+                		<div class="row">
+                			<table class="table table-striped" style="table-layout: fixed">
+                			<thead>
+                				<tr>
+                					<!-- добавлен th и убран collspan="2" у одного из th -->
+                					<th class="text-center" style="width:50px">
+                						<i class="fa fa-check-square-o"></i>
+                					</th>
+                					
+                					<th class="text-center" style="width:50px">Pos.</th>
+                					<th style="width:50px" class="hidden-xs hidden-sm"></th>
+                					<th colspan="1">Description</th>
+                				</tr>
+                				</thead>
+                				<tbody>
+
+                					<!-- изменены td указана другая ширина -->
+                					<tr>
+                						<td class="text-center td-center hidden-sm hidden-xs" width="50px">
+                							<div class="checkbox checkbox-primary"><input data-domain="apple.com" type="checkbox">
+                							<label></label>
+                							</div>
+                						</td>
+
+                						<td class="text-center td-center hidden-lg hidden-md success" style="padding: 0 3px; width:30px">
+                							<div>1(0)
+                								<span class="text-success">
+                									<i class="fa fa-arrow-up"></i>
+                								</span>
+                							</div>
+
+                							<div class="checkbox checkbox-primary"><input data-domain="apple.com" type="checkbox"><label></label>
+                							</div>
+                						</td>
+
+                						<td class="text-center td-center hidden-xs hidden-sm" style="width:30px">1</td>
+
+                						<td class="text-right td-center success hidden-xs hidden-sm" >
+                							0
+                							<span class="text-success">
+                								<i class="fa fa-arrow-up"></i>
+                							</span>
+                						</td>
+
+                						<td>
+                							<div class="row hover-container">
+                								<div class="col-lg-2 col-xs-12 text-center">
+
+                									<a href="/site-info/apple.com">
+
+                										<amp-img src="http://thumbnail.metricskey.net/t/336x280/0f9ec5f02d42c78b46e6f161e2d285d471cce1ae.jpg?uri=apple.com" width="60" height="60" layout="responsive" alt="apple.com screenshot"></amp-img>
+
+                										<noscript>
+                											<img alt="apple.com screenshot" style="max-width: 336px;" width="100%" src="http://thumbnail.metricskey.net/t/336x280/0f9ec5f02d42c78b46e6f161e2d285d471cce1ae.jpg?uri=apple.com" />
+                										</noscript>
+
+                										<div>
+                											<div class="star-ratings ">
+                												<div class="star-ratings-top" style="width: 60%">
+                													<i class="fa fa-star"></i>
+                													<i class="fa fa-star"></i>
+                													<i class="fa fa-star"></i>
+                													<i class="fa fa-star"></i>
+                													<i class="fa fa-star"></i>
+                												</div>
+
+                												<div class="star-ratings-bottom">
+                													<i class="fa fa-star"></i>
+                													<i class="fa fa-star"></i>
+                													<i class="fa fa-star"></i>
+                													<i class="fa fa-star"></i>
+                													<i class="fa fa-star"></i>
+                												</div>
+                											</div>
+                										</div>
+                									</a>
+
+                								</div>
+
+                								<div class="col-lg-10 col-xs-12">
+
+                									<div class="h5 word-break-xs">
+                										<img data-original="https://plus.google.com/_/favicon?domain_url=http://apple.com" src="https://plus.google.com/_/favicon?domain_url=http://apple.com" class="lazy" alt="icon of apple.com" style="display: inline;" width="16" height="16">
+
+                										<noscript>
+                											<img alt="icon of apple.com" height="16" width="16" src="https://plus.google.com/_/favicon?domain_url=http://apple.com" />
+                										</noscript>
+
+                										<a href="/site-info/apple.com">apple.com</a>
+                									</div>
+
+                									<div class="h5 font-600 word-break-xs">Apple</div>
+
+                									<p class="word-break-xs">See the MacBook Pro, iPhone 7, and AirPods. Explore iPad, Apple Watch, iOS, watchOS, macOS, and more. Visit the site to learn, buy, and get support.</p>
+
+                									<div class="btn-group">
+                										<button class="btn btn-white dropdown-toggle" data-toggle="dropdown">Look at 5 relevant links</button>
+
+                										<ul class="dropdown-menu">
+                											<li><a title="/icloud/" href="/url-info?url=http%3A%2F%2Fapple.com%2Ficloud%2F"><span class="text-muted">#5</span> /icloud/</a></li>
+
+                											<li><a title="/iphone/" href="/url-info?url=http%3A%2F%2Fapple.com%2Fiphone%2F"><span class="text-muted">#1</span> /iphone/</a></li>
+
+                											<li><a title="/uk/iphone/" href="/url-info?url=http%3A%2F%2Fapple.com%2Fuk%2Fiphone%2F"><span class="text-muted">#2</span> /uk/iphone/</a></li>
+
+                											<li><a title="/iphone/compare/" href="/url-info?url=http%3A%2F%2Fapple.com%2Fiphone%2Fcompare%2F"><span class="text-muted">#4</span> /iphone/compare/</a></li>
+
+                											<li><a title="/shop/buy-iphone/iphone5s" href="/url-info?url=http%3A%2F%2Fapple.com%2Fshop%2Fbuy-iphone%2Fiphone5s"><span class="text-muted">#3</span> /shop/buy-iphone/iphone5s</a></li>
+                										</ul>
+                									</div>
+
+                									<span data-site-monitoring-btn="/sites/apple.com/check"><a class="btn btn-warning hover-container-item" rel="nofollow" target="_blank" href="/sites/apple.com/check">Monitor the website</a></span>
+                								</div>
+
+                							</div>
+                						</td>
+                					</tr>
+
+                					<tr>
+                						<td class="text-center td-center hidden-sm hidden-xs" width="50px">
+                							<div class="checkbox checkbox-primary"><input data-domain="apple.com" type="checkbox">
+                							<label></label>
+                							</div>
+                						</td>
+
+                						<td class="text-center td-center hidden-lg hidden-md success" style="padding: 0 3px; width:30px">
+                							<div>1(0)
+                								<span class="text-success">
+                									<i class="fa fa-arrow-up"></i>
+                								</span>
+                							</div>
+
+                							<div class="checkbox checkbox-primary"><input data-domain="apple.com" type="checkbox"><label></label>
+                							</div>
+                						</td>
+
+                						<td class="text-center td-center hidden-xs hidden-sm" style="width:30px">1</td>
+
+                						<td class="text-right td-center success hidden-xs hidden-sm" >
+                							0
+                							<span class="text-success">
+                								<i class="fa fa-arrow-up"></i>
+                							</span>
+                						</td>
+
+                						<td>
+                							<div class="row hover-container">
+                								<div class="col-lg-2 col-xs-12 text-center">
+
+                									<a href="/site-info/apple.com">
+
+                										<amp-img src="http://thumbnail.metricskey.net/t/336x280/0f9ec5f02d42c78b46e6f161e2d285d471cce1ae.jpg?uri=apple.com" width="60" height="60" layout="responsive" alt="apple.com screenshot"></amp-img>
+
+                										<noscript>
+                											<img alt="apple.com screenshot" style="max-width: 336px;" width="100%" src="http://thumbnail.metricskey.net/t/336x280/0f9ec5f02d42c78b46e6f161e2d285d471cce1ae.jpg?uri=apple.com" />
+                										</noscript>
+
+                										<div>
+                											<div class="star-ratings ">
+                												<div class="star-ratings-top" style="width: 60%">
+                													<i class="fa fa-star"></i>
+                													<i class="fa fa-star"></i>
+                													<i class="fa fa-star"></i>
+                													<i class="fa fa-star"></i>
+                													<i class="fa fa-star"></i>
+                												</div>
+
+                												<div class="star-ratings-bottom">
+                													<i class="fa fa-star"></i>
+                													<i class="fa fa-star"></i>
+                													<i class="fa fa-star"></i>
+                													<i class="fa fa-star"></i>
+                													<i class="fa fa-star"></i>
+                												</div>
+                											</div>
+                										</div>
+                									</a>
+
+                								</div>
+
+                								<div class="col-lg-10 col-xs-12">
+
+                									<div class="h5 word-break-xs">
+                										<img data-original="https://plus.google.com/_/favicon?domain_url=http://apple.com" src="https://plus.google.com/_/favicon?domain_url=http://apple.com" class="lazy" alt="icon of apple.com" style="display: inline;" width="16" height="16">
+
+                										<noscript>
+                											<img alt="icon of apple.com" height="16" width="16" src="https://plus.google.com/_/favicon?domain_url=http://apple.com" />
+                										</noscript>
+
+                										<a href="/site-info/apple.com">apple.com</a>
+                									</div>
+
+                									<div class="h5 font-600 word-break-xs">Apple</div>
+
+                									<p class="word-break-xs">See the MacBook Pro, iPhone 7, and AirPods. Explore iPad, Apple Watch, iOS, watchOS, macOS, and more. Visit the site to learn, buy, and get support.</p>
+
+                									<div class="btn-group">
+                										<button class="btn btn-white dropdown-toggle" data-toggle="dropdown">Look at 5 relevant links</button>
+
+                										<ul class="dropdown-menu">
+                											<li><a title="/icloud/" href="/url-info?url=http%3A%2F%2Fapple.com%2Ficloud%2F"><span class="text-muted">#5</span> /icloud/</a></li>
+
+                											<li><a title="/iphone/" href="/url-info?url=http%3A%2F%2Fapple.com%2Fiphone%2F"><span class="text-muted">#1</span> /iphone/</a></li>
+
+                											<li><a title="/uk/iphone/" href="/url-info?url=http%3A%2F%2Fapple.com%2Fuk%2Fiphone%2F"><span class="text-muted">#2</span> /uk/iphone/</a></li>
+
+                											<li><a title="/iphone/compare/" href="/url-info?url=http%3A%2F%2Fapple.com%2Fiphone%2Fcompare%2F"><span class="text-muted">#4</span> /iphone/compare/</a></li>
+
+                											<li><a title="/shop/buy-iphone/iphone5s" href="/url-info?url=http%3A%2F%2Fapple.com%2Fshop%2Fbuy-iphone%2Fiphone5s"><span class="text-muted">#3</span> /shop/buy-iphone/iphone5s</a></li>
+                										</ul>
+                									</div>
+
+                									<span data-site-monitoring-btn="/sites/apple.com/check"><a class="btn btn-warning hover-container-item" rel="nofollow" target="_blank" href="/sites/apple.com/check">Monitor the website</a></span>
+                								</div>
 
-    											<li><a title="/shop/buy-iphone/iphone5s" href="/url-info?url=http%3A%2F%2Fapple.com%2Fshop%2Fbuy-iphone%2Fiphone5s"><span class="text-muted">#3</span> /shop/buy-iphone/iphone5s</a></li>
-    										</ul>
-    									</div>
+                							</div>
+                						</td>
+                					</tr>
 
-    									<span data-site-monitoring-btn="/sites/apple.com/check"><a class="btn btn-warning hover-container-item" rel="nofollow" target="_blank" href="/sites/apple.com/check">Monitor the website</a></span>
-    								</div>
-
-    							</div>
-    						</td>
-    					</tr>
-
-    					<tr>
-    						<td class="text-center td-center hidden-sm hidden-xs" width="50px">
-    							<div class="checkbox checkbox-primary"><input data-domain="apple.com" type="checkbox">
-    							<label></label>
-    							</div>
-    						</td>
-
-    						<td class="text-center td-center hidden-lg hidden-md success" style="padding: 0 3px; width:30px">
-    							<div>1(0)
-    								<span class="text-success">
-    									<i class="fa fa-arrow-up"></i>
-    								</span>
-    							</div>
-
-    							<div class="checkbox checkbox-primary"><input data-domain="apple.com" type="checkbox"><label></label>
-    							</div>
-    						</td>
-
-    						<td class="text-center td-center hidden-xs hidden-sm" style="width:30px">1</td>
-
-    						<td class="text-right td-center success hidden-xs hidden-sm" >
-    							0
-    							<span class="text-success">
-    								<i class="fa fa-arrow-up"></i>
-    							</span>
-    						</td>
-
-    						<td>
-    							<div class="row hover-container">
-    								<div class="col-lg-2 col-xs-12 text-center">
-
-    									<a href="/site-info/apple.com">
-
-    										<amp-img src="http://thumbnail.metricskey.net/t/336x280/0f9ec5f02d42c78b46e6f161e2d285d471cce1ae.jpg?uri=apple.com" width="60" height="60" layout="responsive" alt="apple.com screenshot"></amp-img>
-
-    										<noscript>
-    											<img alt="apple.com screenshot" style="max-width: 336px;" width="100%" src="http://thumbnail.metricskey.net/t/336x280/0f9ec5f02d42c78b46e6f161e2d285d471cce1ae.jpg?uri=apple.com" />
-    										</noscript>
-
-    										<div>
-    											<div class="star-ratings ">
-    												<div class="star-ratings-top" style="width: 60%">
-    													<i class="fa fa-star"></i>
-    													<i class="fa fa-star"></i>
-    													<i class="fa fa-star"></i>
-    													<i class="fa fa-star"></i>
-    													<i class="fa fa-star"></i>
-    												</div>
-
-    												<div class="star-ratings-bottom">
-    													<i class="fa fa-star"></i>
-    													<i class="fa fa-star"></i>
-    													<i class="fa fa-star"></i>
-    													<i class="fa fa-star"></i>
-    													<i class="fa fa-star"></i>
-    												</div>
-    											</div>
-    										</div>
-    									</a>
-
-    								</div>
-
-    								<div class="col-lg-10 col-xs-12">
-
-    									<div class="h5 word-break-xs">
-    										<img data-original="https://plus.google.com/_/favicon?domain_url=http://apple.com" src="https://plus.google.com/_/favicon?domain_url=http://apple.com" class="lazy" alt="icon of apple.com" style="display: inline;" width="16" height="16">
-
-    										<noscript>
-    											<img alt="icon of apple.com" height="16" width="16" src="https://plus.google.com/_/favicon?domain_url=http://apple.com" />
-    										</noscript>
-
-    										<a href="/site-info/apple.com">apple.com</a>
-    									</div>
-
-    									<div class="h5 font-600 word-break-xs">Apple</div>
-
-    									<p class="word-break-xs">See the MacBook Pro, iPhone 7, and AirPods. Explore iPad, Apple Watch, iOS, watchOS, macOS, and more. Visit the site to learn, buy, and get support.</p>
-
-    									<div class="btn-group">
-    										<button class="btn btn-white dropdown-toggle" data-toggle="dropdown">Look at 5 relevant links</button>
-
-    										<ul class="dropdown-menu">
-    											<li><a title="/icloud/" href="/url-info?url=http%3A%2F%2Fapple.com%2Ficloud%2F"><span class="text-muted">#5</span> /icloud/</a></li>
-
-    											<li><a title="/iphone/" href="/url-info?url=http%3A%2F%2Fapple.com%2Fiphone%2F"><span class="text-muted">#1</span> /iphone/</a></li>
-
-    											<li><a title="/uk/iphone/" href="/url-info?url=http%3A%2F%2Fapple.com%2Fuk%2Fiphone%2F"><span class="text-muted">#2</span> /uk/iphone/</a></li>
-
-    											<li><a title="/iphone/compare/" href="/url-info?url=http%3A%2F%2Fapple.com%2Fiphone%2Fcompare%2F"><span class="text-muted">#4</span> /iphone/compare/</a></li>
-
-    											<li><a title="/shop/buy-iphone/iphone5s" href="/url-info?url=http%3A%2F%2Fapple.com%2Fshop%2Fbuy-iphone%2Fiphone5s"><span class="text-muted">#3</span> /shop/buy-iphone/iphone5s</a></li>
-    										</ul>
-    									</div>
-
-    									<span data-site-monitoring-btn="/sites/apple.com/check"><a class="btn btn-warning hover-container-item" rel="nofollow" target="_blank" href="/sites/apple.com/check">Monitor the website</a></span>
-    								</div>
-
-    							</div>
-    						</td>
-    					</tr>
-
-    					<tr>
-    						<td class="text-center td-center hidden-sm hidden-xs" width="50px">
-    							<div class="checkbox checkbox-primary"><input data-domain="apple.com" type="checkbox">
-    							<label></label>
-    							</div>
-    						</td>
-
-    						<td class="text-center td-center hidden-lg hidden-md success" style="padding: 0 3px; width:30px">
-    							<div>1(0)
-    								<span class="text-success">
-    									<i class="fa fa-arrow-up"></i>
-    								</span>
-    							</div>
-
-    							<div class="checkbox checkbox-primary"><input data-domain="apple.com" type="checkbox"><label></label>
-    							</div>
-    						</td>
-
-    						<td class="text-center td-center hidden-xs hidden-sm" style="width:30px">1</td>
-
-    						<td class="text-right td-center success hidden-xs hidden-sm" >
-    							0
-    							<span class="text-success">
-    								<i class="fa fa-arrow-up"></i>
-    							</span>
-    						</td>
-
-    						<td>
-    							<div class="row hover-container">
-    								<div class="col-lg-2 col-xs-12 text-center">
-
-    									<a href="/site-info/apple.com">
-    										<!-- <img data-original="http://thumbnail.metricskey.net/t/336x280/0f9ec5f02d42c78b46e6f161e2d285d471cce1ae.jpg?uri=apple.com" src="http://thumbnail.metricskey.net/t/336x280/0f9ec5f02d42c78b46e6f161e2d285d471cce1ae.jpg?uri=apple.com" class="lazy" alt="apple.com screenshot" style="max-width: 336px; display: inline;" width="100%"> -->
-
-    										<amp-img src="http://thumbnail.metricskey.net/t/336x280/0f9ec5f02d42c78b46e6f161e2d285d471cce1ae.jpg?uri=apple.com" width="60" height="60" layout="responsive" alt="apple.com screenshot"></amp-img>
-
-    										<noscript>
-    											<img alt="apple.com screenshot" style="max-width: 336px;" width="100%" src="http://thumbnail.metricskey.net/t/336x280/0f9ec5f02d42c78b46e6f161e2d285d471cce1ae.jpg?uri=apple.com" />
-    										</noscript>
-
-    										<div>
-    											<div class="star-ratings ">
-    												<div class="star-ratings-top" style="width: 60%">
-    													<i class="fa fa-star"></i>
-    													<i class="fa fa-star"></i>
-    													<i class="fa fa-star"></i>
-    													<i class="fa fa-star"></i>
-    													<i class="fa fa-star"></i>
-    												</div>
-
-    												<div class="star-ratings-bottom">
-    													<i class="fa fa-star"></i>
-    													<i class="fa fa-star"></i>
-    													<i class="fa fa-star"></i>
-    													<i class="fa fa-star"></i>
-    													<i class="fa fa-star"></i>
-    												</div>
-    											</div>
-    										</div>
-    									</a>
-
-    								</div>
-
-    								<div class="col-lg-10 col-xs-12">
-
-    									<div class="h5 word-break-xs">
-    										<img data-original="https://plus.google.com/_/favicon?domain_url=http://apple.com" src="https://plus.google.com/_/favicon?domain_url=http://apple.com" class="lazy" alt="icon of apple.com" style="display: inline;" width="16" height="16">
-
-    										<noscript>
-    											<img alt="icon of apple.com" height="16" width="16" src="https://plus.google.com/_/favicon?domain_url=http://apple.com" />
-    										</noscript>
-
-    										<a href="/site-info/apple.com">apple.com</a>
-    									</div>
-
-    									<div class="h5 font-600 word-break-xs">Apple</div>
-
-    									<p class="word-break-xs">See the MacBook Pro, iPhone 7, and AirPods. Explore iPad, Apple Watch, iOS, watchOS, macOS, and more. Visit the site to learn, buy, and get support.</p>
-
-    									<div class="btn-group">
-    										<button class="btn btn-white dropdown-toggle" data-toggle="dropdown">Look at 5 relevant links</button>
-
-    										<ul class="dropdown-menu">
-    											<li><a title="/icloud/" href="/url-info?url=http%3A%2F%2Fapple.com%2Ficloud%2F"><span class="text-muted">#5</span> /icloud/</a></li>
-
-    											<li><a title="/iphone/" href="/url-info?url=http%3A%2F%2Fapple.com%2Fiphone%2F"><span class="text-muted">#1</span> /iphone/</a></li>
-
-    											<li><a title="/uk/iphone/" href="/url-info?url=http%3A%2F%2Fapple.com%2Fuk%2Fiphone%2F"><span class="text-muted">#2</span> /uk/iphone/</a></li>
-
-    											<li><a title="/iphone/compare/" href="/url-info?url=http%3A%2F%2Fapple.com%2Fiphone%2Fcompare%2F"><span class="text-muted">#4</span> /iphone/compare/</a></li>
-
-    											<li><a title="/shop/buy-iphone/iphone5s" href="/url-info?url=http%3A%2F%2Fapple.com%2Fshop%2Fbuy-iphone%2Fiphone5s"><span class="text-muted">#3</span> /shop/buy-iphone/iphone5s</a></li>
-    										</ul>
-    									</div>
-
-    									<span data-site-monitoring-btn="/sites/apple.com/check"><a class="btn btn-warning hover-container-item" rel="nofollow" target="_blank" href="/sites/apple.com/check">Monitor the website</a></span>
-    								</div>
-
-    							</div>
-    						</td>
-    					</tr>
-
-    				</tbody>
-    		</table>
-    		</div>
-    	</div>
-
+                					<tr>
+                						<td class="text-center td-center hidden-sm hidden-xs" width="50px">
+                							<div class="checkbox checkbox-primary"><input data-domain="apple.com" type="checkbox">
+                							<label></label>
+                							</div>
+                						</td>
+
+                						<td class="text-center td-center hidden-lg hidden-md success" style="padding: 0 3px; width:30px">
+                							<div>1(0)
+                								<span class="text-success">
+                									<i class="fa fa-arrow-up"></i>
+                								</span>
+                							</div>
+
+                							<div class="checkbox checkbox-primary"><input data-domain="apple.com" type="checkbox"><label></label>
+                							</div>
+                						</td>
+
+                						<td class="text-center td-center hidden-xs hidden-sm" style="width:30px">1</td>
+
+                						<td class="text-right td-center success hidden-xs hidden-sm" >
+                							0
+                							<span class="text-success">
+                								<i class="fa fa-arrow-up"></i>
+                							</span>
+                						</td>
+
+                						<td>
+                							<div class="row hover-container">
+                								<div class="col-lg-2 col-xs-12 text-center">
+
+                									<a href="/site-info/apple.com">
+                										<!-- <img data-original="http://thumbnail.metricskey.net/t/336x280/0f9ec5f02d42c78b46e6f161e2d285d471cce1ae.jpg?uri=apple.com" src="http://thumbnail.metricskey.net/t/336x280/0f9ec5f02d42c78b46e6f161e2d285d471cce1ae.jpg?uri=apple.com" class="lazy" alt="apple.com screenshot" style="max-width: 336px; display: inline;" width="100%"> -->
+
+                										<amp-img src="http://thumbnail.metricskey.net/t/336x280/0f9ec5f02d42c78b46e6f161e2d285d471cce1ae.jpg?uri=apple.com" width="60" height="60" layout="responsive" alt="apple.com screenshot"></amp-img>
+
+                										<noscript>
+                											<img alt="apple.com screenshot" style="max-width: 336px;" width="100%" src="http://thumbnail.metricskey.net/t/336x280/0f9ec5f02d42c78b46e6f161e2d285d471cce1ae.jpg?uri=apple.com" />
+                										</noscript>
+
+                										<div>
+                											<div class="star-ratings ">
+                												<div class="star-ratings-top" style="width: 60%">
+                													<i class="fa fa-star"></i>
+                													<i class="fa fa-star"></i>
+                													<i class="fa fa-star"></i>
+                													<i class="fa fa-star"></i>
+                													<i class="fa fa-star"></i>
+                												</div>
+
+                												<div class="star-ratings-bottom">
+                													<i class="fa fa-star"></i>
+                													<i class="fa fa-star"></i>
+                													<i class="fa fa-star"></i>
+                													<i class="fa fa-star"></i>
+                													<i class="fa fa-star"></i>
+                												</div>
+                											</div>
+                										</div>
+                									</a>
+
+                								</div>
+
+                								<div class="col-lg-10 col-xs-12">
+
+                									<div class="h5 word-break-xs">
+                										<img data-original="https://plus.google.com/_/favicon?domain_url=http://apple.com" src="https://plus.google.com/_/favicon?domain_url=http://apple.com" class="lazy" alt="icon of apple.com" style="display: inline;" width="16" height="16">
+
+                										<noscript>
+                											<img alt="icon of apple.com" height="16" width="16" src="https://plus.google.com/_/favicon?domain_url=http://apple.com" />
+                										</noscript>
+
+                										<a href="/site-info/apple.com">apple.com</a>
+                									</div>
+
+                									<div class="h5 font-600 word-break-xs">Apple</div>
+
+                									<p class="word-break-xs">See the MacBook Pro, iPhone 7, and AirPods. Explore iPad, Apple Watch, iOS, watchOS, macOS, and more. Visit the site to learn, buy, and get support.</p>
+
+                									<div class="btn-group">
+                										<button class="btn btn-white dropdown-toggle" data-toggle="dropdown">Look at 5 relevant links</button>
+
+                										<ul class="dropdown-menu">
+                											<li><a title="/icloud/" href="/url-info?url=http%3A%2F%2Fapple.com%2Ficloud%2F"><span class="text-muted">#5</span> /icloud/</a></li>
+
+                											<li><a title="/iphone/" href="/url-info?url=http%3A%2F%2Fapple.com%2Fiphone%2F"><span class="text-muted">#1</span> /iphone/</a></li>
+
+                											<li><a title="/uk/iphone/" href="/url-info?url=http%3A%2F%2Fapple.com%2Fuk%2Fiphone%2F"><span class="text-muted">#2</span> /uk/iphone/</a></li>
+
+                											<li><a title="/iphone/compare/" href="/url-info?url=http%3A%2F%2Fapple.com%2Fiphone%2Fcompare%2F"><span class="text-muted">#4</span> /iphone/compare/</a></li>
+
+                											<li><a title="/shop/buy-iphone/iphone5s" href="/url-info?url=http%3A%2F%2Fapple.com%2Fshop%2Fbuy-iphone%2Fiphone5s"><span class="text-muted">#3</span> /shop/buy-iphone/iphone5s</a></li>
+                										</ul>
+                									</div>
+
+                									<span data-site-monitoring-btn="/sites/apple.com/check"><a class="btn btn-warning hover-container-item" rel="nofollow" target="_blank" href="/sites/apple.com/check">Monitor the website</a></span>
+                								</div>
+
+                							</div>
+                						</td>
+                					</tr>
+
+                				</tbody>
+                		</table>
+                		</div>
+                    </div>
+            	</div>
+
+            </div>
+        </div>
     </div>
-
+</div>
 <!-- изменены классы для двух блоков футера *col-xs.. -->
 <footer class="footer text-right">
 	<div class="container">

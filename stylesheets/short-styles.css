@@ -3229,40 +3229,6 @@ pre {
 
 
 
-.panel {
-  border: none;
-  margin-bottom: 20px
-}
-.panel .panel-body {
-  padding: 20px
-}
-.panel .panel-body p {
-  margin: 0px
-}
-.panel .panel-body p+p {
-  margin-top: 15px
-}
-.panel-heading {
-  border: none !important;
-  padding: 10px 20px
-}
-.panel-default>.panel-heading {
-  background-color: #f4f8fb;
-  border-bottom: none;
-  color: #797979
-}
-.panel-title {
-  font-size: 15px;
-  font-weight: 600;
-  margin-bottom: 0;
-  margin-top: 0;
-  text-transform: uppercase;
-  letter-spacing: 0.03em
-}
-.panel-footer {
-  background: #f4f8fb;
-  border-top: 0px
-}
 .panel-color .panel-title {
   color: #ffffff
 }
@@ -6738,8 +6704,8 @@ tbody.collapse.in {
 .panel-heading {
   padding: 10px 15px;
   border-bottom: 1px solid transparent;
-  border-top-right-radius: 3px;
-  border-top-left-radius: 3px
+  border-top-right-radius: 0px;
+  border-top-left-radius: 0px
 }
 .panel-heading>.dropdown .dropdown-toggle {
   color: inherit
@@ -7032,12 +6998,12 @@ tbody.collapse.in {
   border-bottom-color: #bce8f1
 }
 .panel-warning {
-  border-color: #faebcc
+  //border-color: #faebcc
 }
-.panel-warning>.panel-heading {
+.panel-warning>. {
   color: #8a6d3b;
-  background-color: #fcf8e3;
-  border-color: #faebcc
+  background-colorpanel-heading: #ffbd4a;
+  border-color: #ffbd4a;
 }
 .panel-warning>.panel-heading+.panel-collapse>.panel-body {
   border-top-color: #faebcc
@@ -8135,6 +8101,121 @@ output {
 
 
 
+small,
+.small {
+  font-size: 85%
+}
+mark,
+.mark {
+  background-color: #fcf8e3;
+  padding: .2em
+}
+.text-left {
+  text-align: left
+}
+.text-right {
+  text-align: right
+}
+.text-center {
+  text-align: center
+}
+.text-justify {
+  text-align: justify
+}
+.text-nowrap {
+  white-space: nowrap
+}
+.text-lowercase {
+  text-transform: lowercase
+}
+.text-uppercase,
+.initialism {
+  text-transform: uppercase
+}
+.text-capitalize {
+  text-transform: capitalize
+}
+.text-muted {
+  color: #777777
+}
+.text-primary {
+  color: #337ab7
+}
+a.text-primary:hover,
+a.text-primary:focus {
+  color: #286090
+}
+.text-success {
+  color: #3c763d
+}
+a.text-success:hover,
+a.text-success:focus {
+  color: #2b542c
+}
+.text-info {
+  color: #31708f
+}
+a.text-info:hover,
+a.text-info:focus {
+  color: #245269
+}
+.text-warning {
+  color: #8a6d3b
+}
+a.text-warning:hover,
+a.text-warning:focus {
+  color: #66512c
+}
+.text-danger {
+  color: #a94442
+}
+a.text-danger:hover,
+a.text-danger:focus {
+  color: #843534
+}
+.bg-primary {
+  color: #fff
+}
+.bg-primary {
+  background-color: #337ab7
+}
+a.bg-primary:hover,
+a.bg-primary:focus {
+  background-color: #286090
+}
+.bg-success {
+  background-color: #dff0d8
+}
+a.bg-success:hover,
+a.bg-success:focus {
+  background-color: #c1e2b3
+}
+.bg-info {
+  background-color: #d9edf7
+}
+a.bg-info:hover,
+a.bg-info:focus {
+  background-color: #afd9ee
+}
+.bg-warning {
+  background-color: #fcf8e3
+}
+a.bg-warning:hover,
+a.bg-warning:focus {
+  background-color: #f7ecb5
+}
+.bg-danger {
+  background-color: #f2dede
+}
+a.bg-danger:hover,
+a.bg-danger:focus {
+  background-color: #e4b9b9
+}
+.page-header {
+  padding-bottom: 9px;
+  margin: 40px 0 20px;
+  border-bottom: 1px solid #eeeeee
+}
 ul,
 ol {
   margin-top: 0;
@@ -8181,4 +8262,61 @@ dd {
 }
 .dl-horizontal dd:after {
   clear: both
+}
+
+
+.panel {
+  border: none;
+  margin-bottom: 20px
+}
+.panel .panel-body {
+  padding: 20px
+}
+.panel .panel-body p {
+  margin: 0px
+}
+.panel .panel-body p+p {
+  margin-top: 15px
+}
+.panel-heading {
+  border: none !important;
+  padding: 10px 20px
+}
+.panel-default>.panel-heading {
+  background-color: #f4f8fb;
+  border-bottom: none;
+  color: #797979
+}
+.panel-title {
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 0;
+  margin-top: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.03em
+}
+.panel-footer {
+  background: #f4f8fb;
+  border-top: 0px
+}
+
+
+.main {
+  padding: 0 10px
+}
+@media (min-width: 991px) {
+  .main,
+  .main-sidebar {
+    float: left
+  }
+  .main {
+    width: calc(100% - 320px)
+  }
+  .main-sidebar {
+    width: 320px;
+    padding: 0 10px
+  }
+}
+.popover-content {
+  color: black
 }
