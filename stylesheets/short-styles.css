@@ -2013,6 +2013,9 @@ pre {
     display: block !important
   }
 }
+.container {
+  width: 90%;
+}
 @media (max-width: 991px) {
   .wrapper {
     margin-top: 80px
@@ -3062,9 +3065,7 @@ pre {
   border-bottom-color: transparent;
   cursor: default
 }
-.container {
-  width: 90%;
-}
+
 
 
 @media (min-width: 768px) {
