@@ -39,7 +39,7 @@
 		amp-sidebar {
 		  width: 250px;
 		  padding-right: 10px;
-		  top: 60px !important;
+		  top: 60px important;
 		}
 		.amp-sidebar-image {
 		  line-height: 100px;
@@ -271,31 +271,39 @@
 <div class="wrapper">
     <div class="container">
         <div class="row">
-        	<div class="container">
-        		<div class="row">
-        			<div class="col-xs-12">
-        				<h1 class="h3">Analytics for <b>search audio url</b>
-        					<span style="margin-left: 1em">
-        					<a class="btn btn-follow " data-toggle="modal" title="Sign up to follow keyword" href="#signup-modal">
-        					Follow keyword</a>
-        					</span>
-        				</h1>
-        			</div>
-        		</div>
+        	   <div class="container">
+            		<div class="row">
+            			<div class="col-xs-12">
+            				<h1 class="h3">Analytics for <b>search audio url</b>
+            					<span style="margin-left: 1em">
+            					<a class="btn btn-follow " data-toggle="modal" title="Sign up to follow keyword" href="#signup-modal">
+            					Follow keyword</a>
+            					</span>
+            				</h1>
+            			</div>
+            		</div>
         	
         	
-        		<div class="card-box widget-inline">
-        			<div class="row">
-        				<div class="col-md-6">
-
-        				</div>
-        			</div>
-        			<div class="col-md-6">
-        				<div class="col-md-6 col-sm-6">
-        					<div class="widget-inline-box text-center" style="border-right: none"><div class="h3"><i class="fa fa-signal text-primary"></i> <b>Very high</b></div><div class="h4 text-muted">Frequency</div></div></div><div class="col-md-6 col-sm-6"><div class="widget-inline-box text-center" style="border-right: none"><div class="h3"><i class="fa fa-heart text-pink"></i> <b>No</b></div><div class="h4 text-muted">Only adult</div></div></div><div class="col-md-6 col-sm-6"><div class="widget-inline-box text-center" style="border-right: none"><div class="h3"><i class="fa fa-language text-custom"></i> <b>English</b></div><div class="h4 text-muted">Language</div></div></div><div class="col-md-6 col-sm-6"><div class="widget-inline-box text-center" style="border-right: none"><div class="h3"><i class="fa fa-info text-purple"></i> <b>0.0</b></div><div class="h4 text-muted">Advertising index</div></div>
-        					</div>
-        			</div>
-        		</div>
+            		<div class="card-box widget-inline">
+            			<div class="row">
+            				<div class="col-md-6">
+                                <amp-ad
+                                    layout="responsive"
+                                    width=300
+                                    height=250
+                                    type="adsense"
+                                    data-ad-client="ca-pub-4672709811169659"
+                                    data-ad-slot="2465332122">
+                                </amp-ad>
+            				</div>
+            			
+            			<div class="col-md-6">
+            				<div class="col-md-6 col-sm-6">
+            					<div class="widget-inline-box text-center" style="border-right: none"><div class="h3"><i class="fa fa-signal text-primary"></i> <b>Very high</b></div><div class="h4 text-muted">Frequency</div></div></div><div class="col-md-6 col-sm-6"><div class="widget-inline-box text-center" style="border-right: none"><div class="h3"><i class="fa fa-heart text-pink"></i> <b>No</b></div><div class="h4 text-muted">Only adult</div></div></div><div class="col-md-6 col-sm-6"><div class="widget-inline-box text-center" style="border-right: none"><div class="h3"><i class="fa fa-language text-custom"></i> <b>English</b></div><div class="h4 text-muted">Language</div></div></div><div class="col-md-6 col-sm-6"><div class="widget-inline-box text-center" style="border-right: none"><div class="h3"><i class="fa fa-info text-purple"></i> <b>0.0</b></div><div class="h4 text-muted">Advertising index</div></div>
+            					</div>
+            			</div>
+                        </div>
+            		</div>
         		</div>
         	</div>
            
