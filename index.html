@@ -58,17 +58,8 @@
 		  margin-left: 20px;
 		}
 
-        td {
-          a img {
+        td a img {
             display: block;
-          }
-        }
-
-        .table-amp-img-container {
-          display: inline-block;
-          /*width: 184px;*/
-          /*height: 140px;*/
-          margin-right: 10px;
         }
 	</style>
 
@@ -251,6 +242,43 @@
 
 </head>
 <body>
+<!-- добавлен amp sidebar -->
+<amp-sidebar id='sidebar'  layout="nodisplay" side="right">
+    <amp-img class='amp-close-image'
+        src="img/close.png"
+        width="25"
+        height="25"
+        alt="close sidebar"
+        on="tap:sidebar.close"
+        role="button"
+        tabindex="0">
+    </amp-img>
+    <ul>
+        <li>
+            <form action="https://metricskey.net/search" class="app-search">
+                <input class="form-control" name="query" placeholder="Search domain, keyword, url" type="text" value="">
+                <a href="https://metricskey.net/search/search-audio-url/#" onclick="$(this).closest('form').submit(); return false;"><i class="fa fa-search"></i></a>
+            </form>
+        </li>
+        <li>
+            <a href="/site-info"><i class="fa fa-industry"></i>Website analysis</a>
+        </li>
+        <li>
+            <a href="/keyword-info"><i class="fa fa-key"></i>Keywords research</a>
+        </li>
+        <li>
+            <a href="/url-info"><i class="fa fa-sitemap"></i>Content research</a>
+        </li>
+        <li>
+            <a href="/compare-sites"><i class="fa fa-cubes"></i>Competitors</a>
+        </li>
+        <li>
+            <a target="_blank" href="/sites/updown"><i class="fa fa-rocket"></i>Updown test</a>
+        </li>
+        
+    </ul>
+</amp-sidebar>
+
    
 <header id="topnav">
 	<div class="topbar-main">
@@ -314,43 +342,6 @@
             </div>
             </div>
         </div>
-           
-          <!-- добавлен amp sidebar -->
-        	<amp-sidebar id='sidebar'  layout="nodisplay" side="right">
-        		<amp-img class='amp-close-image'
-        			src="img/close.png"
-        			width="25"
-        			height="25"
-        			alt="close sidebar"
-        			on="tap:sidebar.close"
-        			role="button"
-        			tabindex="0">
-        		</amp-img>
-        		<ul>
-        			<li>
-        				<form action="https://metricskey.net/search" class="app-search">
-        					<input class="form-control" name="query" placeholder="Search domain, keyword, url" type="text" value="">
-        					<a href="https://metricskey.net/search/search-audio-url/#" onclick="$(this).closest('form').submit(); return false;"><i class="fa fa-search"></i></a>
-        				</form>
-        			</li>
-        			<li>
-        				<a href="/site-info"><i class="fa fa-industry"></i>Website analysis</a>
-        			</li>
-        			<li>
-        				<a href="/keyword-info"><i class="fa fa-key"></i>Keywords research</a>
-        			</li>
-        			<li>
-        				<a href="/url-info"><i class="fa fa-sitemap"></i>Content research</a>
-        			</li>
-        			<li>
-        				<a href="/compare-sites"><i class="fa fa-cubes"></i>Competitors</a>
-        			</li>
-        			<li>
-        				<a target="_blank" href="/sites/updown"><i class="fa fa-rocket"></i>Updown test</a>
-        			</li>
-        			
-        		</ul>
-        	</amp-sidebar>
 
         	<!-- добавлен тестовый рекалмынй блок -->
         	<div class="container">
@@ -421,7 +412,7 @@
                         	<div class="row hover-container">
                         		<div class="col-lg-2 col-xs-12 text-center">
 
-                        			<a class="table-amp-img-container" href="/site-info/apple.com">
+                        			<a href="/site-info/apple.com">
 
                                         <amp-img
                                             src="http://thumbnail.metricskey.net/t/336x280/0f9ec5f02d42c78b46e6f161e2d285d471cce1ae.jpg?uri=apple.com"
