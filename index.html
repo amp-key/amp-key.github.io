@@ -287,7 +287,7 @@
     <ul>
         <li>
 
-            <form action="https://metricskey.net/search" class="app-search" method="post" target="_blank">
+            <form action-xhr="https://metricskey.net/search" class="app-search" method="post" target="_blank">
                 <input class="form-control" name="query" placeholder="Search domain, keyword, url" type="text" value="">
                 <a href="https://metricskey.net/search/search-audio-url/#" ><i class="fa fa-search"></i></a>
                 <!-- amp validator ругается на онклик и его пришлось удалить -->
@@ -322,7 +322,8 @@
 	
 	<ul class="nav navbar-nav hidden-sm hidden-xs"><li>
     
-    <form action="https://metricskey.net/search" class="app-search" method="post" target="_blank">
+    <!-- измененно в соответсвии с треб-ми amp -->
+    <form action-xhr="https://metricskey.net/search" class="app-search" method="post" target="_blank">
     <input class="form-control" name="query" placeholder="Search domain, keyword, url" type="text" value=""><a href="https://metricskey.net/search/search-audio-url/#">
     <!-- amp validator ругается на  onclick и поэтому его пришлось удалить --><i class="fa fa-search"></i></a></form></li>
 	</ul>
