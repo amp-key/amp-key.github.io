@@ -1841,13 +1841,13 @@ b {
   font-weight: normal;
   font-style: normal
 }
-@font-face {
+/*@font-face {
   font-family: 'FontAwesome';
   src: url("../fonts/fontawesome-webfont.eot");
   src: url("../fonts/fontawesome-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/fontawesome-webfont.woff2") format("woff2"), url("../fonts/fontawesome-webfont.woff") format("woff"), url("../fonts/fontawesome-webfont.ttf") format("truetype"), url("../fonts/fontawesome-webfont.svg#fontawesomeregular") format("svg");
   font-weight: normal;
   font-style: normal
-}
+}*/
 .fa,
 .btn-follow>.icon,
 #scroller {
@@ -2879,11 +2879,11 @@ output {
   border-top: 1px solid rgba(0, 0, 0, 0.1);
   bottom: 0px;
   color: #58666e;
-  text-align: left
+  text-align: left;
   padding: 20px 0px;
   position: absolute;
   right: 0px;
-  left: 0px
+  left: 0px;
 }
 .footer ul li {
   padding-left: 10px;
@@ -3412,7 +3412,7 @@ body {
     right: 0;
     display: block;
     min-width: 100%;
-    width: auto;
+    width: 100%;
     padding: 60px 20px 20px 20px;
     min-height: 100vh;
   }
