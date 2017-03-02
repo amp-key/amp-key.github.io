@@ -57,6 +57,19 @@
 		button {
 		  margin-left: 20px;
 		}
+
+        td {
+          a img {
+            display: block;
+          }
+        }
+
+        .table-amp-img-container {
+          display: inline-block;
+          /*width: 184px;*/
+          /*height: 140px;*/
+          margin-right: 10px;
+        }
 	</style>
 
 	<style type="text/css">
@@ -271,41 +284,36 @@
 <div class="wrapper">
     <div class="container">
         <div class="row">
-        	   <div class="container">
-            		<div class="row">
-            			<div class="col-xs-12">
-            				<h1 class="h3">Analytics for <b>search audio url</b>
-            					<span style="margin-left: 1em">
-            					<a class="btn btn-follow " data-toggle="modal" title="Sign up to follow keyword" href="#signup-modal">
-            					Follow keyword</a>
-            					</span>
-            				</h1>
-            			</div>
-            		</div>
-        	
-        	
-        		<div class="card-box widget-inline">
-        			<div class="row">
-        				<div class="col-md-6">
-                            <!-- <amp-ad
-                                layout="responsive"
-                                width=300
-                                height=250
-                                type="adsense"
-                                data-ad-client="ca-pub-4672709811169659"
-                                data-ad-slot="2465332122">
-                            </amp-ad> -->
-        				</div>
-        			
-        			<div class="col-md-6">
-        				<div class="col-md-6 col-sm-6">
-        					<div class="widget-inline-box text-center" style="border-right: none"><div class="h3"><i class="fa fa-signal text-primary"></i> <b>Very high</b></div><div class="h4 text-muted">Frequency</div></div></div><div class="col-md-6 col-sm-6"><div class="widget-inline-box text-center" style="border-right: none"><div class="h3"><i class="fa fa-heart text-pink"></i> <b>No</b></div><div class="h4 text-muted">Only adult</div></div></div><div class="col-md-6 col-sm-6"><div class="widget-inline-box text-center" style="border-right: none"><div class="h3"><i class="fa fa-language text-custom"></i> <b>English</b></div><div class="h4 text-muted">Language</div></div></div><div class="col-md-6 col-sm-6"><div class="widget-inline-box text-center" style="border-right: none"><div class="h3"><i class="fa fa-info text-purple"></i> <b>0.0</b></div><div class="h4 text-muted">Advertising index</div></div>
-        					</div>
-        			</div>
+			<div class="col-xs-12">
+				<h1 class="h3">Analytics for <b>search audio url</b>
+					<span style="margin-left: 1em">
+					<a class="btn btn-follow " data-toggle="modal" title="Sign up to follow keyword" href="#signup-modal">
+					Follow keyword</a>
+					</span>
+				</h1>
+			</div>
+        </div>
+
+        <div class="card-box widget-inline">
+            <div class="row">
+                <div class="col-md-6">
+                    <!-- <amp-ad
+                        layout="responsive"
+                        width=300
+                        height=250
+                        type="adsense"
+                        data-ad-client="ca-pub-4672709811169659"
+                        data-ad-slot="2465332122">
+                    </amp-ad> -->
+                </div>
+            
+            <div class="col-md-6">
+                <div class="col-md-6 col-sm-6">
+                    <div class="widget-inline-box text-center" style="border-right: none"><div class="h3"><i class="fa fa-signal text-primary"></i> <b>Very high</b></div><div class="h4 text-muted">Frequency</div></div></div><div class="col-md-6 col-sm-6"><div class="widget-inline-box text-center" style="border-right: none"><div class="h3"><i class="fa fa-heart text-pink"></i> <b>No</b></div><div class="h4 text-muted">Only adult</div></div></div><div class="col-md-6 col-sm-6"><div class="widget-inline-box text-center" style="border-right: none"><div class="h3"><i class="fa fa-language text-custom"></i> <b>English</b></div><div class="h4 text-muted">Language</div></div></div><div class="col-md-6 col-sm-6"><div class="widget-inline-box text-center" style="border-right: none"><div class="h3"><i class="fa fa-info text-purple"></i> <b>0.0</b></div><div class="h4 text-muted">Advertising index</div></div>
                     </div>
-        		</div>
-        		</div>
-        	</div>
+            </div>
+            </div>
+        </div>
            
           <!-- добавлен amp sidebar -->
         	<amp-sidebar id='sidebar'  layout="nodisplay" side="right">
@@ -363,7 +371,7 @@
 
             <div class="main">
         	
-            	<div class="container table-container">
+            	<div class="table-container">
                     <div class="panel panel-warning panel-color">
                         <div class="panel-heading"><h3 class="panel-title">Best of <span class="font-600">mortal combat</span> at MetricsKey<span class="text-muted">(Out of <b>80.4 Million</b> in result | Last check <b>31 January 2016</b>)</span></h3></div>
             			<table class="table table-striped" style="table-layout: fixed">
@@ -413,20 +421,20 @@
                         	<div class="row hover-container">
                         		<div class="col-lg-2 col-xs-12 text-center">
 
-                        			<a href="/site-info/apple.com">
+                        			<a class="table-amp-img-container" href="/site-info/apple.com">
 
-                                        <amp-img class='amp-close-image'
+                                        <amp-img
                                             src="http://thumbnail.metricskey.net/t/336x280/0f9ec5f02d42c78b46e6f161e2d285d471cce1ae.jpg?uri=apple.com"
-                                            width="60"
-                                            height="60"
+                                            width="184"
+                                            height="140"
                                             alt="apple.com screenshot">
                                         </amp-img>
 
                         				<noscript>
                         					<amp-img class='amp-close-image'
                                                 src="http://thumbnail.metricskey.net/t/336x280/0f9ec5f02d42c78b46e6f161e2d285d471cce1ae.jpg?uri=apple.com"
-                                                width="60"
-                                                height="60"
+                                                width="184"
+                                                height="140"
                                                 alt="apple.com screenshot">
                                             </amp-img>
                         				</noscript>
@@ -457,10 +465,17 @@
                         		<div class="col-lg-10 col-xs-12">
 
                         			<div class="h5 word-break-xs">
-                        				<img data-original="https://plus.google.com/_/favicon?domain_url=http://apple.com" src="https://plus.google.com/_/favicon?domain_url=http://apple.com" class="lazy" alt="icon of apple.com" style="display: inline;" width="16" height="16">
+                        				
+                                        <amp-img
+                                            src="https://plus.google.com/_/favicon?domain_url=http://apple.com"
+                                            width="16" height="16" alt="icon of apple.com">
+                                        </amp-img>
 
                         				<noscript>
-                        					<img alt="icon of apple.com" height="16" width="16" src="https://plus.google.com/_/favicon?domain_url=http://apple.com" />
+                        					<amp-img
+                                            src="https://plus.google.com/_/favicon?domain_url=http://apple.com"
+                                            width="16" height="16" alt="icon of apple.com">
+                                        </amp-img>
                         				</noscript>
 
                         				<a href="/site-info/apple.com">apple.com</a>
@@ -526,20 +541,22 @@
 
                         			<a href="/site-info/apple.com">
 
-                        				<amp-img class='amp-close-image'
+                        				<amp-img
                                             src="http://thumbnail.metricskey.net/t/336x280/0f9ec5f02d42c78b46e6f161e2d285d471cce1ae.jpg?uri=apple.com"
-                                            width="60"
-                                            height="60"
+                                            width="184"
+                                            height="140"
                                             alt="apple.com screenshot">
                                         </amp-img>
 
+
                         				<noscript>
-                        					<amp-img class='amp-close-image'
+                        					<amp-img
                                                 src="http://thumbnail.metricskey.net/t/336x280/0f9ec5f02d42c78b46e6f161e2d285d471cce1ae.jpg?uri=apple.com"
-                                                width="60"
-                                                height="60"
+                                                width="184"
+                                                height="140"
                                                 alt="apple.com screenshot">
                                             </amp-img>
+
                         				</noscript>
 
                         				<div>
@@ -568,10 +585,16 @@
                         		<div class="col-lg-10 col-xs-12">
 
                         			<div class="h5 word-break-xs">
-                        				<img data-original="https://plus.google.com/_/favicon?domain_url=http://apple.com" src="https://plus.google.com/_/favicon?domain_url=http://apple.com" class="lazy" alt="icon of apple.com" style="display: inline;" width="16" height="16">
+                        				<amp-img
+                                            src="https://plus.google.com/_/favicon?domain_url=http://apple.com"
+                                            width="16" height="16" alt="icon of apple.com">
+                                        </amp-img>
 
                         				<noscript>
-                        					<img alt="icon of apple.com" height="16" width="16" src="https://plus.google.com/_/favicon?domain_url=http://apple.com" />
+                        					<amp-img
+                                            src="https://plus.google.com/_/favicon?domain_url=http://apple.com"
+                                            width="16" height="16" alt="icon of apple.com">
+                                        </amp-img>
                         				</noscript>
 
                         				<a href="/site-info/apple.com">apple.com</a>
@@ -636,18 +659,18 @@
                         		<div class="col-lg-2 col-xs-12 text-center">
 
                         			<a href="/site-info/apple.com">
-                        				<amp-img class='amp-close-image'
+                        				<amp-img
                                             src="http://thumbnail.metricskey.net/t/336x280/0f9ec5f02d42c78b46e6f161e2d285d471cce1ae.jpg?uri=apple.com"
-                                            width="60"
-                                            height="60"
+                                            width="184"
+                                            height="140"
                                             alt="apple.com screenshot">
                                         </amp-img>
 
                         				<noscript>
-                                            <amp-img class='amp-close-image'
+                                           <amp-img
                                                 src="http://thumbnail.metricskey.net/t/336x280/0f9ec5f02d42c78b46e6f161e2d285d471cce1ae.jpg?uri=apple.com"
-                                                width="60"
-                                                height="60"
+                                                width="184"
+                                                height="140"
                                                 alt="apple.com screenshot">
                                             </amp-img>
                         				</noscript>
@@ -678,10 +701,16 @@
                         		<div class="col-lg-10 col-xs-12">
 
                         			<div class="h5 word-break-xs">
-                        				<img data-original="https://plus.google.com/_/favicon?domain_url=http://apple.com" src="https://plus.google.com/_/favicon?domain_url=http://apple.com" class="lazy" alt="icon of apple.com" style="display: inline;" width="16" height="16">
+                        				<amp-img
+                                            src="https://plus.google.com/_/favicon?domain_url=http://apple.com"
+                                            width="16" height="16" alt="icon of apple.com">
+                                        </amp-img>
 
                         				<noscript>
-                        					<img alt="icon of apple.com" height="16" width="16" src="https://plus.google.com/_/favicon?domain_url=http://apple.com" />
+                        					<amp-img
+                                            src="https://plus.google.com/_/favicon?domain_url=http://apple.com"
+                                            width="16" height="16" alt="icon of apple.com">
+                                        </amp-img>
                         				</noscript>
 
                         				<a href="/site-info/apple.com">apple.com</a>
@@ -724,7 +753,78 @@
     </div>
 </div>
 
-<div class="container"><div class="row"><div class="col-md-4"><div class="card-box"><h3 class="m-t-0">Latest visited</h3><ul class="list-unstyled" style="font-size: 16px"><li style="margin-bottom: 0.6em"><a href="/site-info/cordero-lechal.com"><img data-original="https://plus.google.com/_/favicon?domain_url=http://cordero-lechal.com" src="https://plus.google.com/_/favicon?domain_url=http://cordero-lechal.com" class="lazy" alt="icon of cordero-lechal.com" height="16" width="16" style="display: inline;"><noscript>&lt;img alt="icon of cordero-lechal.com" height="16" width="16" src="https://plus.google.com/_/favicon?domain_url=http://cordero-lechal.com" /&gt;</noscript> cordero-lechal.com</a></li><li style="margin-bottom: 0.6em"><a href="/site-info/desktopmachine.com"><img data-original="https://plus.google.com/_/favicon?domain_url=http://desktopmachine.com" src="https://plus.google.com/_/favicon?domain_url=http://desktopmachine.com" class="lazy" alt="icon of desktopmachine.com" height="16" width="16" style="display: inline;"><noscript>&lt;img alt="icon of desktopmachine.com" height="16" width="16" src="https://plus.google.com/_/favicon?domain_url=http://desktopmachine.com" /&gt;</noscript> desktopmachine.com</a></li><li style="margin-bottom: 0.6em"><a href="/site-info/grammenos-eshop.gr"><img data-original="https://plus.google.com/_/favicon?domain_url=http://grammenos-eshop.gr" src="https://plus.google.com/_/favicon?domain_url=http://grammenos-eshop.gr" class="lazy" alt="icon of grammenos-eshop.gr" height="16" width="16" style="display: inline;"><noscript>&lt;img alt="icon of grammenos-eshop.gr" height="16" width="16" src="https://plus.google.com/_/favicon?domain_url=http://grammenos-eshop.gr" /&gt;</noscript> grammenos-eshop.gr</a></li><li style="margin-bottom: 0.6em"><a href="/site-info/darko.bandcamp.com"><img data-original="https://plus.google.com/_/favicon?domain_url=http://darko.bandcamp.com" src="https://plus.google.com/_/favicon?domain_url=http://darko.bandcamp.com" class="lazy" alt="icon of darko.bandcamp.com" height="16" width="16" style="display: inline;"><noscript>&lt;img alt="icon of darko.bandcamp.com" height="16" width="16" src="https://plus.google.com/_/favicon?domain_url=http://darko.bandcamp.com" /&gt;</noscript> darko.bandcamp.com</a></li><li style="margin-bottom: 0.6em"><a href="/site-info/cssdeck.com"><img data-original="https://plus.google.com/_/favicon?domain_url=http://cssdeck.com" src="https://plus.google.com/_/favicon?domain_url=http://cssdeck.com" class="lazy" alt="icon of cssdeck.com" height="16" width="16" style="display: inline;"><noscript>&lt;img alt="icon of cssdeck.com" height="16" width="16" src="https://plus.google.com/_/favicon?domain_url=http://cssdeck.com" /&gt;</noscript> cssdeck.com</a></li><li style="margin-bottom: 0.6em"><a href="/site-info/vicon-security.com"><img data-original="https://plus.google.com/_/favicon?domain_url=http://vicon-security.com" src="https://plus.google.com/_/favicon?domain_url=http://vicon-security.com" class="lazy" alt="icon of vicon-security.com" height="16" width="16" style="display: inline;"><noscript>&lt;img alt="icon of vicon-security.com" height="16" width="16" src="https://plus.google.com/_/favicon?domain_url=http://vicon-security.com" /&gt;</noscript> vicon-security.com</a></li><li style="margin-bottom: 0.6em"><a href="/site-info/simivalleyford.net"><img data-original="https://plus.google.com/_/favicon?domain_url=http://simivalleyford.net" src="https://plus.google.com/_/favicon?domain_url=http://simivalleyford.net" class="lazy" alt="icon of simivalleyford.net" height="16" width="16" style="display: inline;"><noscript>&lt;img alt="icon of simivalleyford.net" height="16" width="16" src="https://plus.google.com/_/favicon?domain_url=http://simivalleyford.net" /&gt;</noscript> simivalleyford.net</a></li><li style="margin-bottom: 0.6em"><a href="/site-info/nalsoft.com"><img data-original="https://plus.google.com/_/favicon?domain_url=http://nalsoft.com" src="https://plus.google.com/_/favicon?domain_url=http://nalsoft.com" class="lazy" alt="icon of nalsoft.com" height="16" width="16" style="display: inline;"><noscript>&lt;img alt="icon of nalsoft.com" height="16" width="16" src="https://plus.google.com/_/favicon?domain_url=http://nalsoft.com" /&gt;</noscript> nalsoft.com</a></li><li style="margin-bottom: 0.6em"><a href="/site-info/downtownnissan.com"><img data-original="https://plus.google.com/_/favicon?domain_url=http://downtownnissan.com" src="https://plus.google.com/_/favicon?domain_url=http://downtownnissan.com" class="lazy" alt="icon of downtownnissan.com" height="16" width="16" style="display: inline;"><noscript>&lt;img alt="icon of downtownnissan.com" height="16" width="16" src="https://plus.google.com/_/favicon?domain_url=http://downtownnissan.com" /&gt;</noscript> downtownnissan.com</a></li><li style="margin-bottom: 0.6em"><a href="/site-info/techsupportall.com"><img data-original="https://plus.google.com/_/favicon?domain_url=http://techsupportall.com" src="https://plus.google.com/_/favicon?domain_url=http://techsupportall.com" class="lazy" alt="icon of techsupportall.com" height="16" width="16" style="display: inline;"><noscript>&lt;img alt="icon of techsupportall.com" height="16" width="16" src="https://plus.google.com/_/favicon?domain_url=http://techsupportall.com" /&gt;</noscript> techsupportall.com</a></li></ul></div></div><div class="col-md-4"><div class="card-box"><h3 class="m-t-0">Latest checked keywords</h3><ul class="list-unstyled" style="font-size: 16px"><li style="margin-bottom: 0.6em"><a href="/fsx/fsx-fdc-and-airbus-x/">fsx fdc and airbus x</a></li><li style="margin-bottom: 0.6em"><a href="/total/total-marks-of-ib-exam-2013/">total marks of ib exam 2013</a></li><li style="margin-bottom: 0.6em"><a href="/programmer/programmer-activcard-usb/">programmer activcard usb</a></li><li style="margin-bottom: 0.6em"><a href="/batch/batch-vcf-editing/">batch vcf editing</a></li><li style="margin-bottom: 0.6em"><a href="/save/save-pfd-ps3-tool/">save pfd ps3 tool</a></li><li style="margin-bottom: 0.6em"><a href="/adobe/adobe-flash-lite-for-symbian/">adobe flash lite for symbian</a></li><li style="margin-bottom: 0.6em"><a href="/agent/agent-communicator-tricks/">agent communicator tricks</a></li><li style="margin-bottom: 0.6em"><a href="/icm/icm-samsung-galaxy-ace/">icm samsung galaxy ace</a></li><li style="margin-bottom: 0.6em"><a href="/jimmy/jimmy-spose-mp3/">jimmy spose mp3</a></li><li style="margin-bottom: 0.6em"><a href="/send/send-mail-powerbuilder-rtf/">send mail powerbuilder rtf</a></li></ul></div></div><div class="col-md-4"><div class="card-box"><h3 class="m-t-0">Latest searches</h3><ul class="list-unstyled" style="font-size: 16px"><li style="margin-bottom: 0.6em"><a href="/mortal/mortal-kombat/">mortal kombat</a></li><li style="margin-bottom: 0.6em"><a href="/find-site-1man.ga">1man.ga</a></li><li style="margin-bottom: 0.6em"><a href="/balrj/balrj-matka.net">balrj matka.net</a></li><li style="margin-bottom: 0.6em"><a href="/find-site-multiple-arrow.png">multiple arrow.png</a></li><li style="margin-bottom: 0.6em"><a href="/make/make-your-own-3d-dinosaur-pdf-wood/">make your own 3d dinosaur pdf wood</a></li><li style="margin-bottom: 0.6em"><a href="/live/live-result-sgp-king4d/">live result sgp king4d</a></li><li style="margin-bottom: 0.6em"><a href="/software/software-proveedores/">software proveedores</a></li><li style="margin-bottom: 0.6em"><a href="/elektronikon/elektronikon-controller-program/">elektronikon controller program</a></li><li style="margin-bottom: 0.6em"><a href="/makina/makina-nusesh-ne-fier/">makina nusesh ne fier</a></li><li style="margin-bottom: 0.6em"><a href="/sataa/sataa-mataka-com-maduar/">sataa mataka com maduar</a></li></ul></div></div></div></div>
+<div class="container">
+    <div class="row">
+        <div class="col-md-4">
+            <div class="card-box">
+                <h3 class="m-t-0">Latest visited</h3>
+                <ul class="list-unstyled" style="font-size: 16px">
+                    <li style="margin-bottom: 0.6em"><a href="/site-info/cordero-lechal.com">
+                    <amp-img src="https://plus.google.com/_/favicon?domain_url=http://cordero-lechal.com" width="16" height="16" alt="icon of cordero-lechal.com"> </amp-img>
+                    <noscript>&lt;amp-img alt="icon of cordero-lechal.com" height="16" width="16" src="https://plus.google.com/_/favicon?domain_url=http://cordero-lechal.com" /&gt;&lt;amp-img/&gt;</noscript> cordero-lechal.com</a></li>
+                    <li style="margin-bottom: 0.6em"><a href="/site-info/cordero-lechal.com">
+                    <amp-img src="https://plus.google.com/_/favicon?domain_url=http://cordero-lechal.com" width="16" height="16" alt="icon of cordero-lechal.com"> </amp-img>
+                    <noscript>&lt;amp-img alt="icon of cordero-lechal.com" height="16" width="16" src="https://plus.google.com/_/favicon?domain_url=http://cordero-lechal.com" /&gt;&lt;amp-img/&gt;</noscript> cordero-lechal.com</a></li>
+                    <li style="margin-bottom: 0.6em"><a href="/site-info/cordero-lechal.com">
+                    <amp-img src="https://plus.google.com/_/favicon?domain_url=http://cordero-lechal.com" width="16" height="16" alt="icon of cordero-lechal.com"> </amp-img>
+                    <noscript>&lt;amp-img alt="icon of cordero-lechal.com" height="16" width="16" src="https://plus.google.com/_/favicon?domain_url=http://cordero-lechal.com" /&gt;&lt;amp-img/&gt;</noscript> cordero-lechal.com</a></li>
+                    <li style="margin-bottom: 0.6em"><a href="/site-info/cordero-lechal.com">
+                    <amp-img src="https://plus.google.com/_/favicon?domain_url=http://cordero-lechal.com" width="16" height="16" alt="icon of cordero-lechal.com"> </amp-img>
+                    <noscript>&lt;amp-img alt="icon of cordero-lechal.com" height="16" width="16" src="https://plus.google.com/_/favicon?domain_url=http://cordero-lechal.com" /&gt;&lt;amp-img/&gt;</noscript> cordero-lechal.com</a></li>
+                    <li style="margin-bottom: 0.6em"><a href="/site-info/cordero-lechal.com">
+                    <amp-img src="https://plus.google.com/_/favicon?domain_url=http://cordero-lechal.com" width="16" height="16" alt="icon of cordero-lechal.com"> </amp-img>
+                    <noscript>&lt;amp-img alt="icon of cordero-lechal.com" height="16" width="16" src="https://plus.google.com/_/favicon?domain_url=http://cordero-lechal.com" /&gt;&lt;amp-img/&gt;</noscript> cordero-lechal.com</a></li>
+                    <li style="margin-bottom: 0.6em"><a href="/site-info/cordero-lechal.com">
+                    <amp-img src="https://plus.google.com/_/favicon?domain_url=http://cordero-lechal.com" width="16" height="16" alt="icon of cordero-lechal.com"> </amp-img>
+                    <noscript>&lt;amp-img alt="icon of cordero-lechal.com" height="16" width="16" src="https://plus.google.com/_/favicon?domain_url=http://cordero-lechal.com" /&gt;&lt;amp-img/&gt;</noscript> cordero-lechal.com</a></li>
+                    <li style="margin-bottom: 0.6em"><a href="/site-info/cordero-lechal.com">
+                    <amp-img src="https://plus.google.com/_/favicon?domain_url=http://cordero-lechal.com" width="16" height="16" alt="icon of cordero-lechal.com"> </amp-img>
+                    <noscript>&lt;amp-img alt="icon of cordero-lechal.com" height="16" width="16" src="https://plus.google.com/_/favicon?domain_url=http://cordero-lechal.com" /&gt;&lt;amp-img/&gt;</noscript> cordero-lechal.com</a></li>
+                    <li style="margin-bottom: 0.6em"><a href="/site-info/cordero-lechal.com">
+                    <amp-img src="https://plus.google.com/_/favicon?domain_url=http://cordero-lechal.com" width="16" height="16" alt="icon of cordero-lechal.com"> </amp-img>
+                    <noscript>&lt;amp-img alt="icon of cordero-lechal.com" height="16" width="16" src="https://plus.google.com/_/favicon?domain_url=http://cordero-lechal.com" /&gt;&lt;amp-img/&gt;</noscript> cordero-lechal.com</a></li>
+                    <li style="margin-bottom: 0.6em"><a href="/site-info/cordero-lechal.com">
+                    <amp-img src="https://plus.google.com/_/favicon?domain_url=http://cordero-lechal.com" width="16" height="16" alt="icon of cordero-lechal.com"> </amp-img>
+                    <noscript>&lt;amp-img alt="icon of cordero-lechal.com" height="16" width="16" src="https://plus.google.com/_/favicon?domain_url=http://cordero-lechal.com" /&gt;&lt;amp-img/&gt;</noscript> cordero-lechal.com</a></li>
+                    <li style="margin-bottom: 0.6em"><a href="/site-info/cordero-lechal.com">
+                    <amp-img src="https://plus.google.com/_/favicon?domain_url=http://cordero-lechal.com" width="16" height="16" alt="icon of cordero-lechal.com"> </amp-img>
+                    <noscript>&lt;amp-img alt="icon of cordero-lechal.com" height="16" width="16" src="https://plus.google.com/_/favicon?domain_url=http://cordero-lechal.com" /&gt;&lt;amp-img/&gt;</noscript> cordero-lechal.com</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card-box">
+                <h3 class="m-t-0">Latest checked keywords</h3>
+                <ul class="list-unstyled" style="font-size: 16px">
+                <li style="margin-bottom: 0.6em"><a href="/fsx/fsx-fdc-and-airbus-x/">fsx fdc and airbus x</a></li><li style="margin-bottom: 0.6em"><a href="/total/total-marks-of-ib-exam-2013/">total marks of ib exam 2013</a></li>
+                <li style="margin-bottom: 0.6em"><a href="/programmer/programmer-activcard-usb/">programmer activcard usb</a></li>
+                <li style="margin-bottom: 0.6em"><a href="/batch/batch-vcf-editing/">batch vcf editing</a></li><li style="margin-bottom: 0.6em"><a href="/save/save-pfd-ps3-tool/">save pfd ps3 tool</a></li>
+                <li style="margin-bottom: 0.6em"><a href="/adobe/adobe-flash-lite-for-symbian/">adobe flash lite for symbian</a></li>
+                <li style="margin-bottom: 0.6em"><a href="/agent/agent-communicator-tricks/">agent communicator tricks</a></li>
+                <li style="margin-bottom: 0.6em"><a href="/icm/icm-samsung-galaxy-ace/">icm samsung galaxy ace</a></li>
+                <li style="margin-bottom: 0.6em"><a href="/jimmy/jimmy-spose-mp3/">jimmy spose mp3</a></li><li style="margin-bottom: 0.6em"><a href="/send/send-mail-powerbuilder-rtf/">send mail powerbuilder rtf</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card-box">
+                <h3 class="m-t-0">Latest searches</h3>
+                <ul class="list-unstyled" style="font-size: 16px">
+                    <li style="margin-bottom: 0.6em"><a href="/mortal/mortal-kombat/">mortal kombat</a></li>
+                    <li style="margin-bottom: 0.6em"><a href="/find-site-1man.ga">1man.ga</a></li>
+                    <li style="margin-bottom: 0.6em"><a href="/balrj/balrj-matka.net">balrj matka.net</a></li>
+                    <li style="margin-bottom: 0.6em"><a href="/find-site-multiple-arrow.png">multiple arrow.png</a></li>
+                    <li style="margin-bottom: 0.6em"><a href="/make/make-your-own-3d-dinosaur-pdf-wood/">make your own 3d dinosaur pdf wood</a></li><li style="margin-bottom: 0.6em"><a href="/live/live-result-sgp-king4d/">live result sgp king4d</a></li>
+                    <li style="margin-bottom: 0.6em"><a href="/software/software-proveedores/">software proveedores</a></li>
+                    <li style="margin-bottom: 0.6em"><a href="/elektronikon/elektronikon-controller-program/">elektronikon controller program</a></li><li style="margin-bottom: 0.6em"><a href="/makina/makina-nusesh-ne-fier/">makina nusesh ne fier</a>
+                    </li>
+                    <li style="margin-bottom: 0.6em"><a href="/sataa/sataa-mataka-com-maduar/">sataa mataka com maduar</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
 
 <!-- изменены классы для двух блоков футера *col-xs.. -->
 <footer class="footer text-right">
