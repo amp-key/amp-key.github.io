@@ -61,6 +61,38 @@
         td a img {
             display: block;
         }
+
+        /* удалил бордер который был удален в теге style в div*/
+        div.widget-inline .widget-inline-box {
+            border-right: none;
+        }
+        .table-amp-analitics {
+            table-layout: fixed;
+        }
+
+        .table-amp-analitics th {
+            width: 50px;
+        }
+
+        .table-amp-analitics th:last-child {
+            width: auto;
+        }
+        .table> tbody> tr> .table-amp-analitics__rising {
+            width: 30px;
+            padding: 0 3px;
+        }
+
+        .list-latest {
+            font-size: 16px;
+        }
+
+        .list-latest >li {
+            margin-bottom: 0.6em;
+        }
+
+        .footer li {
+            margin-bottom: 0.5em;
+        }
 	</style>
 
 	<style type="text/css">
@@ -316,8 +348,8 @@
         <div class="row">
 			<div class="col-xs-12">
 				<h1 class="h3">Analytics for <b>search audio url</b>
-					<span style="margin-left: 1em">
-					<a class="btn btn-follow " data-toggle="modal" title="Sign up to follow keyword" href="#signup-modal">
+					<span>
+					   <a class="btn btn-follow " data-toggle="modal" title="Sign up to follow keyword" href="#signup-modal">
 					Follow keyword</a>
 					</span>
 				</h1>
@@ -339,7 +371,21 @@
             
             <div class="col-md-6">
                 <div class="col-md-6 col-sm-6">
-                    <div class="widget-inline-box text-center" style="border-right: none"><div class="h3"><i class="fa fa-signal text-primary"></i> <b>Very high</b></div><div class="h4 text-muted">Frequency</div></div></div><div class="col-md-6 col-sm-6"><div class="widget-inline-box text-center" style="border-right: none"><div class="h3"><i class="fa fa-heart text-pink"></i> <b>No</b></div><div class="h4 text-muted">Only adult</div></div></div><div class="col-md-6 col-sm-6"><div class="widget-inline-box text-center" style="border-right: none"><div class="h3"><i class="fa fa-language text-custom"></i> <b>English</b></div><div class="h4 text-muted">Language</div></div></div><div class="col-md-6 col-sm-6"><div class="widget-inline-box text-center" style="border-right: none"><div class="h3"><i class="fa fa-info text-purple"></i> <b>0.0</b></div><div class="h4 text-muted">Advertising index</div></div>
+                    <div class="widget-inline-box text-center">
+                    <div class="h3"><i class="fa fa-signal text-primary"></i> <b>Very high</b></div>
+                    <div class="h4 text-muted">Frequency</div></div></div>
+                    <div class="col-md-6 col-sm-6">
+                    <div class="widget-inline-box text-center">
+                        <div class="h3"><i class="fa fa-heart text-pink"></i> <b>No</b></div>
+                        <div class="h4 text-muted">Only adult</div></div></div>
+                        <div class="col-md-6 col-sm-6">
+                        <div class="widget-inline-box text-center">
+                        <div class="h3"><i class="fa fa-language text-custom"></i> <b>English</b></div>
+                        <div class="h4 text-muted">Language</div></div></div>
+                        <div class="col-md-6 col-sm-6">
+                        <div class="widget-inline-box text-center">
+                        <div class="h3"><i class="fa fa-info text-purple"></i> <b>0.0</b></div>
+                        <div class="h4 text-muted">Advertising index</div></div>
                     </div>
             </div>
             </div>
@@ -362,35 +408,154 @@
         		</div>
         	</div>
 
+        <div class="row">     
             <div class="main">
         	
             	<div class="table-container">
                     <div class="panel panel-warning panel-color">
                         <div class="panel-heading"><h3 class="panel-title">Best of <span class="font-600">mortal combat</span> at MetricsKey<span class="text-muted">(Out of <b>80.4 Million</b> in result | Last check <b>31 January 2016</b>)</span></h3></div>
-            			<table class="table table-striped" style="table-layout: fixed">
+            			<table class="table table-striped table-amp-analitics">
                             <thead>
                                 <tr>
-                                <!-- добавлен th и убран collspan="2" у одного из th -->
-                                <th class="text-center" style="width:50px">
-                                	<i class="fa fa-check-square-o"></i>
-                                </th>
+                                    <!-- добавлен th и убран collspan="2" у одного из th -->
+                                    <th class="text-center">
+                                    	<i class="fa fa-check-square-o"></i>
+                                    </th>
 
-                                <th class="text-center" style="width:50px">Pos.</th>
-                                <th style="width:50px" class="hidden-xs hidden-sm"></th>
-                                <th colspan="1">Description</th>
+                                    <th class="text-center">Pos.</th>
+                                    <th class="hidden-xs hidden-sm"></th>
+                                    <th colspan="1">Description</th>
                                 </tr>
                             </thead>
                         <tbody>
 
                         <!-- изменены td указана другая ширина -->
                         <tr>
+                            <td class="text-center td-center hidden-sm hidden-xs" width="50px">
+                            	<div class="checkbox checkbox-primary"><input data-domain="apple.com" type="checkbox">
+                            	<label></label>
+                            	</div>
+                            </td>
+
+                            <td class="text-center td-center hidden-lg hidden-md success rising table-amp-analitics__rising">
+                            	<div>1(0)
+                            		<span class="text-success">
+                            			<i class="fa fa-arrow-up"></i>
+                            		</span>
+                            	</div>
+
+                            	<div class="checkbox checkbox-primary"><input data-domain="apple.com" type="checkbox"><label></label>
+                            	</div>
+                            </td>
+
+                            <td class="text-center td-center hidden-xs hidden-sm table-amp-analitics__rising">1</td>
+
+                            <td class="text-right td-center success hidden-xs hidden-sm" >
+                            	0
+                            	<span class="text-success">
+                            		<i class="fa fa-arrow-up"></i>
+                            	</span>
+                            </td>
+
+                            <td>
+                            	<div class="row hover-container">
+                            		<div class="col-lg-2 col-xs-12 text-center">
+
+                            			<a href="/site-info/apple.com">
+
+                                            <amp-img
+                                                src="http://thumbnail.metricskey.net/t/336x280/0f9ec5f02d42c78b46e6f161e2d285d471cce1ae.jpg?uri=apple.com"
+                                                width="126"
+                                                height="97"
+                                                alt="apple.com screenshot">
+                                            </amp-img>
+
+                            				<noscript>
+                            					<amp-img class='amp-close-image'
+                                                    src="http://thumbnail.metricskey.net/t/336x280/0f9ec5f02d42c78b46e6f161e2d285d471cce1ae.jpg?uri=apple.com"
+                                                    width="126"
+                                                    height="97"
+                                                    alt="apple.com screenshot">
+                                                </amp-img>
+                            				</noscript>
+
+                            				<div>
+                            					<div class="star-ratings">
+                            						<div class="star-ratings-top" style="width: 60%">
+                            							<i class="fa fa-star"></i>
+                            							<i class="fa fa-star"></i>
+                            							<i class="fa fa-star"></i>
+                            							<i class="fa fa-star"></i>
+                            							<i class="fa fa-star"></i>
+                            						</div>
+
+                            						<div class="star-ratings-bottom">
+                            							<i class="fa fa-star"></i>
+                            							<i class="fa fa-star"></i>
+                            							<i class="fa fa-star"></i>
+                            							<i class="fa fa-star"></i>
+                            							<i class="fa fa-star"></i>
+                            						</div>
+                            					</div>
+                            				</div>
+                            			</a>
+
+                            		</div>
+
+                            		<div class="col-lg-10 col-xs-12">
+
+                            			<div class="h5 word-break-xs">
+                            				
+                                            <amp-img
+                                                src="https://plus.google.com/_/favicon?domain_url=http://apple.com"
+                                                width="16" height="16" alt="icon of apple.com">
+                                            </amp-img>
+
+                            				<noscript>
+                            					<amp-img
+                                                src="https://plus.google.com/_/favicon?domain_url=http://apple.com"
+                                                width="16" height="16" alt="icon of apple.com">
+                                            </amp-img>
+                            				</noscript>
+
+                            				<a href="/site-info/apple.com">apple.com</a>
+                            			</div>
+
+                            			<div class="h5 font-600 word-break-xs">Apple</div>
+
+                            			<p class="word-break-xs">See the MacBook Pro, iPhone 7, and AirPods. Explore iPad, Apple Watch, iOS, watchOS, macOS, and more. Visit the site to learn, buy, and get support.</p>
+
+                            			<div class="btn-group">
+                            				<button class="btn btn-white dropdown-toggle" data-toggle="dropdown">Look at 5 relevant links</button>
+
+                            				<ul class="dropdown-menu">
+                            					<li><a title="/icloud/" href="/url-info?url=http%3A%2F%2Fapple.com%2Ficloud%2F"><span class="text-muted">#5</span> /icloud/</a></li>
+
+                            					<li><a title="/iphone/" href="/url-info?url=http%3A%2F%2Fapple.com%2Fiphone%2F"><span class="text-muted">#1</span> /iphone/</a></li>
+
+                            					<li><a title="/uk/iphone/" href="/url-info?url=http%3A%2F%2Fapple.com%2Fuk%2Fiphone%2F"><span class="text-muted">#2</span> /uk/iphone/</a></li>
+
+                            					<li><a title="/iphone/compare/" href="/url-info?url=http%3A%2F%2Fapple.com%2Fiphone%2Fcompare%2F"><span class="text-muted">#4</span> /iphone/compare/</a></li>
+
+                            					<li><a title="/shop/buy-iphone/iphone5s" href="/url-info?url=http%3A%2F%2Fapple.com%2Fshop%2Fbuy-iphone%2Fiphone5s"><span class="text-muted">#3</span> /shop/buy-iphone/iphone5s</a></li>
+                            				</ul>
+                            			</div>
+
+                            			<span data-site-monitoring-btn="/sites/apple.com/check"><a class="btn btn-warning hover-container-item" rel="nofollow" target="_blank" href="/sites/apple.com/check">Monitor the website</a></span>
+                            		</div>
+
+                            	</div>
+                            </td>
+                        </tr>
+
+                        <tr>
                         <td class="text-center td-center hidden-sm hidden-xs" width="50px">
                         	<div class="checkbox checkbox-primary"><input data-domain="apple.com" type="checkbox">
                         	<label></label>
                         	</div>
                         </td>
 
-                        <td class="text-center td-center hidden-lg hidden-md success" style="padding: 0 3px; width:30px">
+                        <td class="text-center td-center hidden-lg hidden-md success table-amp-analitics__rising"">
                         	<div>1(0)
                         		<span class="text-success">
                         			<i class="fa fa-arrow-up"></i>
@@ -401,7 +566,7 @@
                         	</div>
                         </td>
 
-                        <td class="text-center td-center hidden-xs hidden-sm" style="width:30px">1</td>
+                        <td class="text-center td-center hidden-xs hidden-sm table-amp-analitics__rising">1</td>
 
                         <td class="text-right td-center success hidden-xs hidden-sm" >
                         	0
@@ -416,20 +581,22 @@
 
                         			<a href="/site-info/apple.com">
 
-                                        <amp-img
+                        				<amp-img
                                             src="http://thumbnail.metricskey.net/t/336x280/0f9ec5f02d42c78b46e6f161e2d285d471cce1ae.jpg?uri=apple.com"
-                                            width="184"
-                                            height="140"
+                                            width="126"
+                                                height="97"
                                             alt="apple.com screenshot">
                                         </amp-img>
 
+
                         				<noscript>
-                        					<amp-img class='amp-close-image'
+                        					<amp-img
                                                 src="http://thumbnail.metricskey.net/t/336x280/0f9ec5f02d42c78b46e6f161e2d285d471cce1ae.jpg?uri=apple.com"
-                                                width="184"
-                                                height="140"
+                                                width="126"
+                                                height="97"
                                                 alt="apple.com screenshot">
                                             </amp-img>
+
                         				</noscript>
 
                         				<div>
@@ -458,8 +625,7 @@
                         		<div class="col-lg-10 col-xs-12">
 
                         			<div class="h5 word-break-xs">
-                        				
-                                        <amp-img
+                        				<amp-img
                                             src="https://plus.google.com/_/favicon?domain_url=http://apple.com"
                                             width="16" height="16" alt="icon of apple.com">
                                         </amp-img>
@@ -508,7 +674,7 @@
                         	</div>
                         </td>
 
-                        <td class="text-center td-center hidden-lg hidden-md success" style="padding: 0 3px; width:30px">
+                        <td class="text-center td-center hidden-lg hidden-md success table-amp-analitics__rising">
                         	<div>1(0)
                         		<span class="text-success">
                         			<i class="fa fa-arrow-up"></i>
@@ -519,126 +685,7 @@
                         	</div>
                         </td>
 
-                        <td class="text-center td-center hidden-xs hidden-sm" style="width:30px">1</td>
-
-                        <td class="text-right td-center success hidden-xs hidden-sm" >
-                        	0
-                        	<span class="text-success">
-                        		<i class="fa fa-arrow-up"></i>
-                        	</span>
-                        </td>
-
-                        <td>
-                        	<div class="row hover-container">
-                        		<div class="col-lg-2 col-xs-12 text-center">
-
-                        			<a href="/site-info/apple.com">
-
-                        				<amp-img
-                                            src="http://thumbnail.metricskey.net/t/336x280/0f9ec5f02d42c78b46e6f161e2d285d471cce1ae.jpg?uri=apple.com"
-                                            width="184"
-                                            height="140"
-                                            alt="apple.com screenshot">
-                                        </amp-img>
-
-
-                        				<noscript>
-                        					<amp-img
-                                                src="http://thumbnail.metricskey.net/t/336x280/0f9ec5f02d42c78b46e6f161e2d285d471cce1ae.jpg?uri=apple.com"
-                                                width="184"
-                                                height="140"
-                                                alt="apple.com screenshot">
-                                            </amp-img>
-
-                        				</noscript>
-
-                        				<div>
-                        					<div class="star-ratings ">
-                        						<div class="star-ratings-top" style="width: 60%">
-                        							<i class="fa fa-star"></i>
-                        							<i class="fa fa-star"></i>
-                        							<i class="fa fa-star"></i>
-                        							<i class="fa fa-star"></i>
-                        							<i class="fa fa-star"></i>
-                        						</div>
-
-                        						<div class="star-ratings-bottom">
-                        							<i class="fa fa-star"></i>
-                        							<i class="fa fa-star"></i>
-                        							<i class="fa fa-star"></i>
-                        							<i class="fa fa-star"></i>
-                        							<i class="fa fa-star"></i>
-                        						</div>
-                        					</div>
-                        				</div>
-                        			</a>
-
-                        		</div>
-
-                        		<div class="col-lg-10 col-xs-12">
-
-                        			<div class="h5 word-break-xs">
-                        				<amp-img
-                                            src="https://plus.google.com/_/favicon?domain_url=http://apple.com"
-                                            width="16" height="16" alt="icon of apple.com">
-                                        </amp-img>
-
-                        				<noscript>
-                        					<amp-img
-                                            src="https://plus.google.com/_/favicon?domain_url=http://apple.com"
-                                            width="16" height="16" alt="icon of apple.com">
-                                        </amp-img>
-                        				</noscript>
-
-                        				<a href="/site-info/apple.com">apple.com</a>
-                        			</div>
-
-                        			<div class="h5 font-600 word-break-xs">Apple</div>
-
-                        			<p class="word-break-xs">See the MacBook Pro, iPhone 7, and AirPods. Explore iPad, Apple Watch, iOS, watchOS, macOS, and more. Visit the site to learn, buy, and get support.</p>
-
-                        			<div class="btn-group">
-                        				<button class="btn btn-white dropdown-toggle" data-toggle="dropdown">Look at 5 relevant links</button>
-
-                        				<ul class="dropdown-menu">
-                        					<li><a title="/icloud/" href="/url-info?url=http%3A%2F%2Fapple.com%2Ficloud%2F"><span class="text-muted">#5</span> /icloud/</a></li>
-
-                        					<li><a title="/iphone/" href="/url-info?url=http%3A%2F%2Fapple.com%2Fiphone%2F"><span class="text-muted">#1</span> /iphone/</a></li>
-
-                        					<li><a title="/uk/iphone/" href="/url-info?url=http%3A%2F%2Fapple.com%2Fuk%2Fiphone%2F"><span class="text-muted">#2</span> /uk/iphone/</a></li>
-
-                        					<li><a title="/iphone/compare/" href="/url-info?url=http%3A%2F%2Fapple.com%2Fiphone%2Fcompare%2F"><span class="text-muted">#4</span> /iphone/compare/</a></li>
-
-                        					<li><a title="/shop/buy-iphone/iphone5s" href="/url-info?url=http%3A%2F%2Fapple.com%2Fshop%2Fbuy-iphone%2Fiphone5s"><span class="text-muted">#3</span> /shop/buy-iphone/iphone5s</a></li>
-                        				</ul>
-                        			</div>
-
-                        			<span data-site-monitoring-btn="/sites/apple.com/check"><a class="btn btn-warning hover-container-item" rel="nofollow" target="_blank" href="/sites/apple.com/check">Monitor the website</a></span>
-                        		</div>
-
-                        	</div>
-                        </td>
-                        </tr>
-
-                        <tr>
-                        <td class="text-center td-center hidden-sm hidden-xs" width="50px">
-                        	<div class="checkbox checkbox-primary"><input data-domain="apple.com" type="checkbox">
-                        	<label></label>
-                        	</div>
-                        </td>
-
-                        <td class="text-center td-center hidden-lg hidden-md success" style="padding: 0 3px; width:30px">
-                        	<div>1(0)
-                        		<span class="text-success">
-                        			<i class="fa fa-arrow-up"></i>
-                        		</span>
-                        	</div>
-
-                        	<div class="checkbox checkbox-primary"><input data-domain="apple.com" type="checkbox"><label></label>
-                        	</div>
-                        </td>
-
-                        <td class="text-center td-center hidden-xs hidden-sm" style="width:30px">1</td>
+                        <td class="text-center td-center hidden-xs hidden-sm table-amp-analitics__rising" >1</td>
 
                         <td class="text-right td-center success hidden-xs hidden-sm" >
                         	0
@@ -654,16 +701,16 @@
                         			<a href="/site-info/apple.com">
                         				<amp-img
                                             src="http://thumbnail.metricskey.net/t/336x280/0f9ec5f02d42c78b46e6f161e2d285d471cce1ae.jpg?uri=apple.com"
-                                            width="184"
-                                            height="140"
+                                            width="126"
+                                            height="97"
                                             alt="apple.com screenshot">
                                         </amp-img>
 
                         				<noscript>
                                            <amp-img
                                                 src="http://thumbnail.metricskey.net/t/336x280/0f9ec5f02d42c78b46e6f161e2d285d471cce1ae.jpg?uri=apple.com"
-                                                width="184"
-                                                height="140"
+                                                width="126"
+                                                height="97"
                                                 alt="apple.com screenshot">
                                             </amp-img>
                         				</noscript>
@@ -742,6 +789,7 @@
             	</div>
 
             </div>
+        </div> 
         </div>
     </div>
 </div>
@@ -751,35 +799,36 @@
         <div class="col-md-4">
             <div class="card-box">
                 <h3 class="m-t-0">Latest visited</h3>
-                <ul class="list-unstyled" style="font-size: 16px">
-                    <li style="margin-bottom: 0.6em"><a href="/site-info/cordero-lechal.com">
+                <!-- add class latest for disable styles -->
+                <ul class="list-unstyled list-latest" >
+                    <li><a href="/site-info/cordero-lechal.com">
                     <amp-img src="https://plus.google.com/_/favicon?domain_url=http://cordero-lechal.com" width="16" height="16" alt="icon of cordero-lechal.com"> </amp-img>
                     <noscript>&lt;amp-img alt="icon of cordero-lechal.com" height="16" width="16" src="https://plus.google.com/_/favicon?domain_url=http://cordero-lechal.com" /&gt;&lt;amp-img/&gt;</noscript> cordero-lechal.com</a></li>
-                    <li style="margin-bottom: 0.6em"><a href="/site-info/cordero-lechal.com">
+                    <li><a href="/site-info/cordero-lechal.com">
                     <amp-img src="https://plus.google.com/_/favicon?domain_url=http://cordero-lechal.com" width="16" height="16" alt="icon of cordero-lechal.com"> </amp-img>
                     <noscript>&lt;amp-img alt="icon of cordero-lechal.com" height="16" width="16" src="https://plus.google.com/_/favicon?domain_url=http://cordero-lechal.com" /&gt;&lt;amp-img/&gt;</noscript> cordero-lechal.com</a></li>
-                    <li style="margin-bottom: 0.6em"><a href="/site-info/cordero-lechal.com">
+                    <li><a href="/site-info/cordero-lechal.com">
                     <amp-img src="https://plus.google.com/_/favicon?domain_url=http://cordero-lechal.com" width="16" height="16" alt="icon of cordero-lechal.com"> </amp-img>
                     <noscript>&lt;amp-img alt="icon of cordero-lechal.com" height="16" width="16" src="https://plus.google.com/_/favicon?domain_url=http://cordero-lechal.com" /&gt;&lt;amp-img/&gt;</noscript> cordero-lechal.com</a></li>
-                    <li style="margin-bottom: 0.6em"><a href="/site-info/cordero-lechal.com">
+                    <li><a href="/site-info/cordero-lechal.com">
                     <amp-img src="https://plus.google.com/_/favicon?domain_url=http://cordero-lechal.com" width="16" height="16" alt="icon of cordero-lechal.com"> </amp-img>
                     <noscript>&lt;amp-img alt="icon of cordero-lechal.com" height="16" width="16" src="https://plus.google.com/_/favicon?domain_url=http://cordero-lechal.com" /&gt;&lt;amp-img/&gt;</noscript> cordero-lechal.com</a></li>
-                    <li style="margin-bottom: 0.6em"><a href="/site-info/cordero-lechal.com">
+                    <li><a href="/site-info/cordero-lechal.com">
                     <amp-img src="https://plus.google.com/_/favicon?domain_url=http://cordero-lechal.com" width="16" height="16" alt="icon of cordero-lechal.com"> </amp-img>
                     <noscript>&lt;amp-img alt="icon of cordero-lechal.com" height="16" width="16" src="https://plus.google.com/_/favicon?domain_url=http://cordero-lechal.com" /&gt;&lt;amp-img/&gt;</noscript> cordero-lechal.com</a></li>
-                    <li style="margin-bottom: 0.6em"><a href="/site-info/cordero-lechal.com">
+                    <li><a href="/site-info/cordero-lechal.com">
                     <amp-img src="https://plus.google.com/_/favicon?domain_url=http://cordero-lechal.com" width="16" height="16" alt="icon of cordero-lechal.com"> </amp-img>
                     <noscript>&lt;amp-img alt="icon of cordero-lechal.com" height="16" width="16" src="https://plus.google.com/_/favicon?domain_url=http://cordero-lechal.com" /&gt;&lt;amp-img/&gt;</noscript> cordero-lechal.com</a></li>
-                    <li style="margin-bottom: 0.6em"><a href="/site-info/cordero-lechal.com">
+                    <li><a href="/site-info/cordero-lechal.com">
                     <amp-img src="https://plus.google.com/_/favicon?domain_url=http://cordero-lechal.com" width="16" height="16" alt="icon of cordero-lechal.com"> </amp-img>
                     <noscript>&lt;amp-img alt="icon of cordero-lechal.com" height="16" width="16" src="https://plus.google.com/_/favicon?domain_url=http://cordero-lechal.com" /&gt;&lt;amp-img/&gt;</noscript> cordero-lechal.com</a></li>
-                    <li style="margin-bottom: 0.6em"><a href="/site-info/cordero-lechal.com">
+                    <li><a href="/site-info/cordero-lechal.com">
                     <amp-img src="https://plus.google.com/_/favicon?domain_url=http://cordero-lechal.com" width="16" height="16" alt="icon of cordero-lechal.com"> </amp-img>
                     <noscript>&lt;amp-img alt="icon of cordero-lechal.com" height="16" width="16" src="https://plus.google.com/_/favicon?domain_url=http://cordero-lechal.com" /&gt;&lt;amp-img/&gt;</noscript> cordero-lechal.com</a></li>
-                    <li style="margin-bottom: 0.6em"><a href="/site-info/cordero-lechal.com">
+                    <li><a href="/site-info/cordero-lechal.com">
                     <amp-img src="https://plus.google.com/_/favicon?domain_url=http://cordero-lechal.com" width="16" height="16" alt="icon of cordero-lechal.com"> </amp-img>
                     <noscript>&lt;amp-img alt="icon of cordero-lechal.com" height="16" width="16" src="https://plus.google.com/_/favicon?domain_url=http://cordero-lechal.com" /&gt;&lt;amp-img/&gt;</noscript> cordero-lechal.com</a></li>
-                    <li style="margin-bottom: 0.6em"><a href="/site-info/cordero-lechal.com">
+                    <li><a href="/site-info/cordero-lechal.com">
                     <amp-img src="https://plus.google.com/_/favicon?domain_url=http://cordero-lechal.com" width="16" height="16" alt="icon of cordero-lechal.com"> </amp-img>
                     <noscript>&lt;amp-img alt="icon of cordero-lechal.com" height="16" width="16" src="https://plus.google.com/_/favicon?domain_url=http://cordero-lechal.com" /&gt;&lt;amp-img/&gt;</noscript> cordero-lechal.com</a></li>
                 </ul>
@@ -788,30 +837,35 @@
         <div class="col-md-4">
             <div class="card-box">
                 <h3 class="m-t-0">Latest checked keywords</h3>
-                <ul class="list-unstyled" style="font-size: 16px">
-                <li style="margin-bottom: 0.6em"><a href="/fsx/fsx-fdc-and-airbus-x/">fsx fdc and airbus x</a></li><li style="margin-bottom: 0.6em"><a href="/total/total-marks-of-ib-exam-2013/">total marks of ib exam 2013</a></li>
-                <li style="margin-bottom: 0.6em"><a href="/programmer/programmer-activcard-usb/">programmer activcard usb</a></li>
-                <li style="margin-bottom: 0.6em"><a href="/batch/batch-vcf-editing/">batch vcf editing</a></li><li style="margin-bottom: 0.6em"><a href="/save/save-pfd-ps3-tool/">save pfd ps3 tool</a></li>
-                <li style="margin-bottom: 0.6em"><a href="/adobe/adobe-flash-lite-for-symbian/">adobe flash lite for symbian</a></li>
-                <li style="margin-bottom: 0.6em"><a href="/agent/agent-communicator-tricks/">agent communicator tricks</a></li>
-                <li style="margin-bottom: 0.6em"><a href="/icm/icm-samsung-galaxy-ace/">icm samsung galaxy ace</a></li>
-                <li style="margin-bottom: 0.6em"><a href="/jimmy/jimmy-spose-mp3/">jimmy spose mp3</a></li><li style="margin-bottom: 0.6em"><a href="/send/send-mail-powerbuilder-rtf/">send mail powerbuilder rtf</a></li>
+                <ul class="list-unstyled list-latest">
+                <li><a href="/fsx/fsx-fdc-and-airbus-x/">fsx fdc and airbus x</a></li>
+                <li><a href="/total/total-marks-of-ib-exam-2013/">total marks of ib exam 2013</a></li>
+                <li><a href="/programmer/programmer-activcard-usb/">programmer activcard usb</a></li>
+                <li><a href="/batch/batch-vcf-editing/">batch vcf editing</a></li>
+                <li><a href="/save/save-pfd-ps3-tool/">save pfd ps3 tool</a></li>
+                <li><a href="/adobe/adobe-flash-lite-for-symbian/">adobe flash lite for symbian</a></li>
+                <li><a href="/agent/agent-communicator-tricks/">agent communicator tricks</a></li>
+                <li><a href="/icm/icm-samsung-galaxy-ace/">icm samsung galaxy ace</a></li>
+                <li><a href="/jimmy/jimmy-spose-mp3/">jimmy spose mp3</a></li>
+                <li><a href="/send/send-mail-powerbuilder-rtf/">send mail powerbuilder rtf</a></li>
                 </ul>
             </div>
         </div>
         <div class="col-md-4">
             <div class="card-box">
                 <h3 class="m-t-0">Latest searches</h3>
-                <ul class="list-unstyled" style="font-size: 16px">
-                    <li style="margin-bottom: 0.6em"><a href="/mortal/mortal-kombat/">mortal kombat</a></li>
-                    <li style="margin-bottom: 0.6em"><a href="/find-site-1man.ga">1man.ga</a></li>
-                    <li style="margin-bottom: 0.6em"><a href="/balrj/balrj-matka.net">balrj matka.net</a></li>
-                    <li style="margin-bottom: 0.6em"><a href="/find-site-multiple-arrow.png">multiple arrow.png</a></li>
-                    <li style="margin-bottom: 0.6em"><a href="/make/make-your-own-3d-dinosaur-pdf-wood/">make your own 3d dinosaur pdf wood</a></li><li style="margin-bottom: 0.6em"><a href="/live/live-result-sgp-king4d/">live result sgp king4d</a></li>
-                    <li style="margin-bottom: 0.6em"><a href="/software/software-proveedores/">software proveedores</a></li>
-                    <li style="margin-bottom: 0.6em"><a href="/elektronikon/elektronikon-controller-program/">elektronikon controller program</a></li><li style="margin-bottom: 0.6em"><a href="/makina/makina-nusesh-ne-fier/">makina nusesh ne fier</a>
+                <ul class="list-unstyled list-latest" style="font-size: 16px">
+                    <li><a href="/mortal/mortal-kombat/">mortal kombat</a></li>
+                    <li><a href="/find-site-1man.ga">1man.ga</a></li>
+                    <li><a href="/balrj/balrj-matka.net">balrj matka.net</a></li>
+                    <li><a href="/find-site-multiple-arrow.png">multiple arrow.png</a></li>
+                    <li><a href="/make/make-your-own-3d-dinosaur-pdf-wood/">make your own 3d dinosaur pdf wood</a></li>
+                    <li><a href="/live/live-result-sgp-king4d/">live result sgp king4d</a></li>
+                    <li><a href="/software/software-proveedores/">software proveedores</a></li>
+                    <li><a href="/elektronikon/elektronikon-controller-program/">elektronikon controller program</a></li>
+                    <li><a href="/makina/makina-nusesh-ne-fier/">makina nusesh ne fier</a>
                     </li>
-                    <li style="margin-bottom: 0.6em"><a href="/sataa/sataa-mataka-com-maduar/">sataa mataka com maduar</a>
+                    <li><a href="/sataa/sataa-mataka-com-maduar/">sataa mataka com maduar</a>
                     </li>
                 </ul>
             </div>
@@ -820,17 +874,17 @@
 </div>
 
 <!-- изменены классы для двух блоков футера *col-xs.. -->
-<footer class="footer text-right">
+<footer class="footer text-right ">
 	<div class="container">
 		<div class="row">
 			<div class="col-xs-12 col-sm-5 col-md-6">2017 © <a href="https://metricskey.net">MetricsKey</a>
 			</div>
 			<div class="col-xs-12 col-sm-7 col-md-6">
 				<ul class="pull-right list-inline m-b-0">
-				<li style="margin-bottom: 0.5em"><a href="/widgets">Widgets</a></li>
-				<li style="margin-bottom: 0.5em"><a href="/pricing">Pricing</a></li>
-				<li style="margin-bottom: 0.5em"><a href="/terms-of-service">Terms of Service</a></li>
-				<li style="margin-bottom: 0.5em"><a href="/static/contacts">Contacts</a></li></ul>
+				<li><a href="/widgets">Widgets</a></li>
+				<li><a href="/pricing">Pricing</a></li>
+				<li><a href="/terms-of-service">Terms of Service</a></li>
+				<li><a href="/static/contacts">Contacts</a></li></ul>
 			</div>
 		</div>
 	</div>
