@@ -264,7 +264,7 @@ p {
   margin: 0 0 10px;
 }
 * {
-  outline: none !important;
+  outline: none;
 }
 b {
   font-weight: 600;
@@ -350,7 +350,7 @@ b {
   border: 1px solid #AAAAAA;
   -webkit-box-shadow: none;
   box-shadow: none;
-  outline: 0 !important;
+  outline: 0;
   color: #333333;
 }
 /* Labels */
@@ -436,7 +436,7 @@ b {
   background-color: #36404a
 }
 #topnav .topbar-main .logo {
-  color: #ffffff !important;
+  color: #ffffff;
   font-size: 20px;
   font-weight: 700;
   letter-spacing: .05em;
@@ -457,17 +457,17 @@ b {
   right: 7px
 }
 #topnav .topbar-main .nav>li>a {
-  color: #ffffff !important;
+  color: #ffffff;
   line-height: 60px;
   padding: 0px 15px;
   position: relative;
-  background: transparent !important
+  background: transparent;
 }
 #topnav .topbar-main .nav>li>a i {
   font-size: 16px
 }
 #topnav .topbar-main .navbar-nav>.open>a {
-  background-color: rgba(255, 255, 255, 0.1) !important
+  background-color: rgba(255, 255, 255, 0.1);
 }
 #topnav .topbar-main .profile img {
   border: 2px solid #edf0f0;
@@ -525,8 +525,7 @@ b {
 }
 #topnav .app-search {
   position: relative;
-  //height: 35px;
-  margin: 15px 20px 15px 10px
+  margin: 15px 20px 15px 10px;
 }
 #topnav .app-search a {
   position: absolute;
@@ -769,7 +768,7 @@ b {
     display: none
   }
   #topnav #sidebar {
-    display: block !important
+    display: block;
   }
 }
 
@@ -1704,15 +1703,15 @@ b {
 
 
 .btn-white {
-  background-color: #fff !important;
+  background-color: #fff;
 }
 .btn-warning, .btn-warning:hover, .btn-warning:focus, .btn-warning:active, .btn-warning.active, .btn-warning.focus, .btn-warning:active, .btn-warning:focus, .btn-warning:hover, .open>.dropdown-toggle.btn-warning {
-  background-color: #ffbd4a !important;
-  border: 1px solid #ffbd4a !important;
+  background-color: #ffbd4a;
+  border: 1px solid #ffbd4a;
 }
 .btn-white:hover, .btn-white:hover:hover, .btn-white:focus:hover, .btn-white:active:hover, .btn-white.active:hover, .btn-white.focus:hover, .btn-white:active:hover, .btn-white:focus:hover, .btn-white:hover:hover, .open>.dropdown-toggle.btn-white:hover {
-  background-color: #f9f9f9 !important;
-  border: 1px solid #eaeaea !important;
+  background-color: #f9f9f9;
+  border: 1px solid #eaeaea;
 }
 
 .panel-color .panel-title {
@@ -1755,16 +1754,16 @@ b {
   margin-right: auto
 }
 .pull-right {
-  float: right !important
+  float: right;
 }
 .pull-left {
-  float: left !important
+  float: left;
 }
 .hide {
-  display: none !important
+  display: none;
 }
 .show {
-  display: block !important
+  display: block;
 }
 .invisible {
   visibility: hidden
@@ -1777,64 +1776,61 @@ b {
   border: 0
 }
 .hidden {
-  display: none !important
+  display: none
 }
 .affix {
   position: fixed
 }
-@-ms-viewport {
-  width: device-width
-}
 .visible-xs {
-  display: none !important
+  display: none
 }
 .visible-sm {
-  display: none !important
+  display: none
 }
 .visible-md {
-  display: none !important
+  display: none
 }
 .visible-lg {
-  display: none !important
+  display: none
 }
 @media (max-width: 767px) {
   .visible-xs {
-    display: block !important
+    display: block
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
   .visible-sm {
-    display: block !important
+    display: block
   }
 }
 @media (min-width: 992px) and (max-width: 1199px) {
   .visible-md {
-    display: block !important
+    display: block
   }
 }
 @media (min-width: 1200px) {
   .visible-lg {
-    display: block !important
+    display: block
   }
 }
 @media (max-width: 767px) {
   .hidden-xs {
-    display: none !important
+    display: none
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
   .hidden-sm {
-    display: none !important
+    display: none
   }
 }
 @media (min-width: 992px) and (max-width: 1199px) {
   .hidden-md {
-    display: none !important
+    display: none
   }
 }
 @media (min-width: 1200px) {
   .hidden-lg {
-    display: none !important
+    display: none
   }
 }
 
@@ -1842,6 +1838,13 @@ b {
   font-family: 'FontAwesome';
   src: url("fonts/fontawesome-webfont.eot");
   src: url("fonts/fontawesome-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/fontawesome-webfont.woff2") format("woff2"), url("fonts/fontawesome-webfont.woff") format("woff"), url("fonts/fontawesome-webfont.ttf") format("truetype"), url("fonts/fontawesome-webfont.svg#fontawesomeregular") format("svg");
+  font-weight: normal;
+  font-style: normal
+}
+@font-face {
+  font-family: 'FontAwesome';
+  src: url("../fonts/fontawesome-webfont.eot");
+  src: url("../fonts/fontawesome-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/fontawesome-webfont.woff2") format("woff2"), url("../fonts/fontawesome-webfont.woff") format("woff"), url("../fonts/fontawesome-webfont.ttf") format("truetype"), url("../fonts/fontawesome-webfont.svg#fontawesomeregular") format("svg");
   font-weight: normal;
   font-style: normal
 }
@@ -2515,7 +2518,7 @@ input[type="button"].btn-block {
 }
 
 .widget-inline {
-  padding: 20px 0px !important
+  padding: 20px 0px
 }
 .widget-inline .col-lg-3 {
   padding: 0px
@@ -2790,7 +2793,7 @@ output {
   position: absolute;
   transition: 0.3s ease-in-out;
   width: 17px;
-  outline: none !important
+  outline: none
 }
 .checkbox label::after {
   color: #555555;
@@ -2809,7 +2812,7 @@ output {
   cursor: pointer;
   opacity: 0;
   z-index: 1;
-  outline: none !important
+  outline: none
 }
 .checkbox input[type="checkbox"]:disabled+label {
   opacity: 0.65
@@ -2876,7 +2879,7 @@ output {
   border-top: 1px solid rgba(0, 0, 0, 0.1);
   bottom: 0px;
   color: #58666e;
-  text-align: left !important;
+  text-align: left
   padding: 20px 0px;
   position: absolute;
   right: 0px;
@@ -2894,7 +2897,7 @@ output {
 }
 .btn {
   border-radius: 3px;
-  outline: none !important
+  outline: none
 }
 .btn-md {
   padding: 8px 16px
@@ -3135,7 +3138,7 @@ dd {
   margin-top: 15px
 }
 .panel-heading {
-  border: none !important;
+  border: none;
   padding: 10px 20px
 }
 .panel-default>.panel-heading {
@@ -3336,7 +3339,7 @@ div.widget-inline .widget-inline-box {
 }
 
 body {
-  overflow: hidden !important;
+  overflow: hidden;
 }
 
 .table .checkbox {
@@ -3378,7 +3381,7 @@ body {
     width: calc(100% + 200px);
     display: block;
     padding-top: 60px;
-    top: 0 !important;
+    top: 0;
     text-align: center;
   }
 
@@ -3408,7 +3411,7 @@ body {
     left: auto;
     right: 0;
     display: block;
-    min-width: 100% !important;
+    min-width: 100%;
     width: auto;
     padding: 60px 20px 20px 20px;
     min-height: 100vh;
@@ -3450,16 +3453,16 @@ body {
 
 @media (max-width: 758px) {
     .footer ul {
-        float: none !important;
+        float: none;
     }
 
     #topnav .navbar-toggle .lines {
         float: right;
     }
     table a >amp-img {
-        width: 100% !important;
+        width: 100%;
         max-width: 300px;
-        height: 200px !important;
+        height: 200px;
     }
 }
 
@@ -3483,6 +3486,6 @@ body {
   h1 span {
     display: block;
     text-align: center;
-    margin: 8px auto !important;
+    margin: 8px auto;
   }
 }
