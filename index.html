@@ -35,6 +35,7 @@
         "dateModified":"2017-03-01"
       }
     </script>
+     <script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
     <script async custom-element="amp-form" src="https://cdn.ampproject.org/v0/amp-form-0.1.js"></script>
     <script async custom-element="amp-ad" src="https://cdn.ampproject.org/v0/amp-ad-0.1.js"></script>
     <script async custom-element="amp-sidebar" src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js"></script>
@@ -759,5 +760,20 @@
 	</div>
 </footer>
 
+<amp-analytics type="googleanalytics" id="analytics1">
+ <script type="application/json">
+  {
+    "vars": {
+      "account": "UA-57278194-1"
+    },
+    "triggers": {
+      "trackPageview": {
+        "on": "visible",
+        "request": "pageview"
+      }
+    }
+  }
+  </script>
+</amp-analytics>
 </body>
 </html>
