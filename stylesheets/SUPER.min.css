@@ -2465,8 +2465,8 @@ th {
   max-width: 100%;
   margin-bottom: 20px
 }
-.table >tr>th,
-.table >tr>td {
+.table tr>th,
+.table tr>td {
   padding: 8px;
   line-height: 1.42857143;
   vertical-align: top;
@@ -2486,8 +2486,8 @@ th {
 .table-bordered {
   border: 1px solid #ddd
 }
-.table-bordered >tr>th,
-.table-bordered >tr>td {
+.table-bordered tr>th,
+.table-bordered tr>td {
   border: 1px solid #ddd
 }
 .table-bordered>thead>tr>th,
