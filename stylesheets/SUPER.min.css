@@ -2102,14 +2102,13 @@ b {
 .btn:active.focus,
 .btn.active:focus,
 .btn.active.focus {
-  /*outline: 5px auto -webkit-focus-ring-color;*/
   outline-offset: -2px
 }
 .btn:hover,
 .btn:focus,
 .btn.focus {
   color: #333;
-  text-decoration: none
+  text-decoration: none;
 }
 .btn:active,
 .btn.active {
@@ -2123,11 +2122,11 @@ fieldset[disabled] .btn {
   cursor: not-allowed;
   opacity: 0.65;
   filter: alpha(opacity=65);
-  box-shadow: none
+  box-shadow: none;
 }
 a.btn.disabled,
 fieldset[disabled] a.btn {
-  pointer-events: none
+  pointer-events: none;
 }
 .btn-default, .btn-default:focus, .btn-default:hover, .btn-default:active,{
   color: #fff;
@@ -2137,7 +2136,7 @@ fieldset[disabled] a.btn {
 }
 .btn-default .badge {
   color: #fff;
-  background-color: #333
+  background-color: #333;
 }
 .btn-primary, .btn-primary:hover, .btn-primary:focus, .btn-primary.focus, .btn-primary:active, .btn-primary.active {
   color: #fff;
@@ -2147,24 +2146,24 @@ fieldset[disabled] a.btn {
 }
 .btn-primary .badge {
   color: #337ab7;
-  background-color: #fff
+  background-color: #fff;
 }
 .btn-success:active, .btn-success:hover, .btn-success:focus, .btn-success,
-.btn-follow:active, .btn-follow:hover, .btn-follow:focus, .btn-follow {{
+.btn-follow:active, .btn-follow:hover, .btn-follow:focus, .btn-follow {
   color: #fff;
   background-color: #81c868;
   border-color: #81c868;
-  background-image: none
+  background-image: none;
 }
 .btn-success .badge,
 .btn-follow .badge {
   color: #5cb85c;
-  background-color: #fff
+  background-color: #fff;
 }
 .btn-info {
   color: #fff;
   background-color: #5bc0de;
-  border-color: #46b8da
+  border-color: #46b8da;
 }
 .btn-info:focus,
 .btn-info.focus {
@@ -2175,14 +2174,14 @@ fieldset[disabled] a.btn {
 .btn-info:hover {
   color: #fff;
   background-color: #31b0d5;
-  border-color: #269abc
+  border-color: #269abc;
 }
 .btn-info:active,
 .btn-info.active,
 .open>.btn-info.dropdown-toggle {
   color: #fff;
   background-color: #31b0d5;
-  border-color: #269abc
+  border-color: #269abc;
 }
 
 .btn-info, .btn-info:hover, .btn-info:focus, .btn-info.focus, .btn-info:active, .btn-info.active {
@@ -2193,7 +2192,7 @@ fieldset[disabled] a.btn {
 }
 .btn-info .badge {
   color: #5bc0de;
-  background-color: #fff
+  background-color: #fff;
 }
 .btn-warning {
   color: #fff;
