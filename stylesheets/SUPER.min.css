@@ -1841,13 +1841,6 @@ b {
   font-weight: normal;
   font-style: normal
 }
-/*@font-face {
-  font-family: 'FontAwesome';
-  src: url("../fonts/fontawesome-webfont.eot");
-  src: url("../fonts/fontawesome-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/fontawesome-webfont.woff2") format("woff2"), url("../fonts/fontawesome-webfont.woff") format("woff"), url("../fonts/fontawesome-webfont.ttf") format("truetype"), url("../fonts/fontawesome-webfont.svg#fontawesomeregular") format("svg");
-  font-weight: normal;
-  font-style: normal
-}*/
 .fa,
 .btn-follow>.icon,
 #scroller {
@@ -2577,7 +2570,6 @@ button.close {
   -webkit-appearance: none
 }
 
-
 table {
   background-color: transparent
 }
@@ -2595,12 +2587,8 @@ th {
   max-width: 100%;
   margin-bottom: 20px
 }
-.table>thead>tr>th,
-.table>thead>tr>td,
-.table>tbody>tr>th,
-.table>tbody>tr>td,
-.table>tfoot>tr>th,
-.table>tfoot>tr>td {
+.table >tr>th,
+.table >tr>td {
   padding: 8px;
   line-height: 1.42857143;
   vertical-align: top;
@@ -2620,12 +2608,8 @@ th {
 .table-bordered {
   border: 1px solid #ddd
 }
-.table-bordered>thead>tr>th,
-.table-bordered>thead>tr>td,
-.table-bordered>tbody>tr>th,
-.table-bordered>tbody>tr>td,
-.table-bordered>tfoot>tr>th,
-.table-bordered>tfoot>tr>td {
+.table-bordered >tr>th,
+.table-bordered >tr>td {
   border: 1px solid #ddd
 }
 .table-bordered>thead>tr>th,
@@ -2655,32 +2639,20 @@ table th[class*="col-"] {
 .table tbody>tr>td.td-center {
     vertical-align: middle;
 }
-.table>thead>tr>td.active,
-.table>thead>tr>th.active,
-.table>thead>tr.active>td,
-.table>thead>tr.active>th,
-.table>tbody>tr>td.active,
-.table>tbody>tr>th.active,
-.table>tbody>tr.active>td,
-.table>tbody>tr.active>th,
-.table>tfoot>tr>td.active,
-.table>tfoot>tr>th.active,
-.table>tfoot>tr.active>td,
-.table>tfoot>tr.active>th {
+.table tr>td.active,
+.table tr>th.active,
+.table tr.active>td,
+.table tr.active>th,
+.table tr>td.active,
+.table tr>th.active,{
   background-color: #f5f5f5
 }
-.table>thead>tr>td.success,
-.table>thead>tr>th.success,
-.table>thead>tr.success>td,
-.table>thead>tr.success>th,
-.table>tbody>tr>td.success,
-.table>tbody>tr>th.success,
-.table>tbody>tr.success>td,
-.table>tbody>tr.success>th,
-.table>tfoot>tr>td.success,
-.table>tfoot>tr>th.success,
-.table>tfoot>tr.success>td,
-.table>tfoot>tr.success>th {
+.table tr>td.success,
+.table tr>th.success,
+.table tr.success>td,
+.table tr.success>th,
+.table tr>td.success,
+.table tr>th.success, {
   background-color: #dff0d8
 }
 .table-responsive {
@@ -2745,12 +2717,6 @@ select[multiple],
 select[size] {
   height: auto
 }
-input[type="file"]:focus,
-input[type="radio"]:focus,
-input[type="checkbox"]:focus {
-  /*outline: 5px auto -webkit-focus-ring-color;*/
-  outline-offset: -2px
-}
 output {
   display: block;
   padding-top: 7px;
@@ -2758,8 +2724,6 @@ output {
   line-height: 1.42857143;
   color: #555555
 }
-
-
 .checkbox {
   padding-left: 20px
 }
@@ -3590,7 +3554,6 @@ tr:last-child td:last-child {
 
 .btn-follow {
   font-size: 15px;
-  /*background-color: #;*/
 }
 .btn-follow>.icon {
   width: 20px;
@@ -3645,7 +3608,6 @@ h1, h2, .page-pricing__features>li, h3, h4, h5, h6 {
 a,a:hover,a:focus,a:active,button,button:hover,button:focus,button:active{
   outline: none;
 }
-
 .without-padding {
   padding: 0;
 }
