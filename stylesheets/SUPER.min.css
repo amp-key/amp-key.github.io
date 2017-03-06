@@ -1786,7 +1786,18 @@ b {
   .visible-xs {
     display: block
   }
+  footer ul {
+    text-align: left;
+    margin: 10px 0 0 0;
+  }
 }
+@media (max-width: 370px) {
+  .footer ul li {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+}
+
 @media (min-width: 768px) and (max-width: 991px) {
   .visible-sm {
     display: block
@@ -3463,7 +3474,11 @@ body {
 @media (max-width: 725px) {
 
   .footer {
-    padding: 8px 0;
+    padding: 10px 0;
+  }
+
+  .footer ul {
+    margin: 10px -10px 0 -10px;
   }
 }
 @media (max-width: 480px) {
@@ -3629,4 +3644,8 @@ h1, h2, .page-pricing__features>li, h3, h4, h5, h6 {
 }
 a,a:hover,a:focus,a:active,button,button:hover,button:focus,button:active{
   outline: none;
+}
+
+.without-padding {
+  padding: 0;
 }
