@@ -1834,10 +1834,17 @@ b {
   }
 }
 
-@font-face {
+/*@font-face {
   font-family: 'FontAwesome';
   src: url("fonts/fontawesome-webfont.eot");
   src: url("fonts/fontawesome-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/fontawesome-webfont.woff2") format("woff2"), url("fonts/fontawesome-webfont.woff") format("woff"), url("fonts/fontawesome-webfont.ttf") format("truetype"), url("fonts/fontawesome-webfont.svg#fontawesomeregular") format("svg");
+  font-weight: normal;
+  font-style: normal
+}*/
+@font-face {
+  font-family: 'FontAwesome';
+  src: url("../fonts/fontawesome-webfont.eot");
+  src: url("../fonts/fontawesome-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/fontawesome-webfont.woff2") format("woff2"), url("../fonts/fontawesome-webfont.woff") format("woff"), url("../fonts/fontawesome-webfont.ttf") format("truetype"), url("../fonts/fontawesome-webfont.svg#fontawesomeregular") format("svg");
   font-weight: normal;
   font-style: normal
 }
@@ -2676,7 +2683,7 @@ output {
 .star-ratings {
   color: #c5c5c5;
   font-size: 20px;
-  display: inline-block;
+  display: block;
   position: relative;
   padding: 0;
   text-shadow: 1px 1px 0 rgba(162, 162, 162, 0.6)
@@ -2687,19 +2694,32 @@ output {
 .star-ratings .fa,
 .star-ratings .btn-follow>.icon,
 .star-ratings #scroller {
-  margin-left: 3px
+  margin-left: 1px
 }
 .star-ratings-top {
-  color: #fba704;
   padding: 0;
-  position: absolute;
   z-index: 1;
   display: block;
-  top: 0;
-  left: 0;
   overflow: hidden;
   white-space: nowrap
 }
+
+.fa-star-half-full {
+  color: #fba704;
+}
+
+.fa-star-half-empty {
+  color: #ccc;
+}
+
+.fa-star-half {
+  color: #fba704;
+}
+
+.fa-star {
+  color: #fba704;
+}
+
 .star-ratings-bottom {
   padding: 0;
   display: block;
@@ -3488,4 +3508,25 @@ a,a:hover,a:focus,a:active,button,button:hover,button:focus,button:active{
 }
 .without-padding {
   padding: 0;
+}
+.word-break-xs a{
+  position: relative;
+  top: -2px;
+}
+@media (max-width: 768px) {
+  .panel-heading-title-width {
+    width: calc(100% - 50px);
+  }
+  .panel-border .panel-heading {
+    margin-right: 0;
+  }
+
+  .panel-heading .btn {
+    margin: 10px 0;
+  }
+
+  .panel-heading .btn span {
+    display: none;
+  }
+
 }
